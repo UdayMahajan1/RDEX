@@ -1,0 +1,209 @@
+.navbar-brand {
+  font-family: 'Source Code Pro';
+  font-weight: 500; 
+}
+
+.transparent-background {
+  background-color: inherit;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsing-element {
+  animation: pulse 1.5s infinite;
+}
+
+.scaleUp {
+  transition: all 0.5s ease-in-out;
+}
+
+.scaleUp:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.stats {
+  color: rgb(233,66,162);
+}
+
+.outline-custom {
+  color: rgb(233,66,162); 
+  background-color: transparent; 
+  border-color: rgb(233,66,162);
+}
+
+.outline-custom:hover {
+  color: rgb(28, 27, 27);
+  background-color: rgb(233,66,162);
+  border-color: rgb(233,66,162);
+}
+
+.custom {
+  color: white;
+  background-color: rgb(233,66,162);
+  border-color: rgb(233,66,162)
+}
+
+.custom:hover {
+  background-color: rgb(186, 16, 113);
+  border-color: rgb(186, 16, 113);
+}
+
+.stats-description {
+  color: rgb(155,157,158);
+}
+
+.card-border {
+  border-style: solid;
+  border-color: rgb(87, 92, 96);
+}
+
+.left-card-animation {
+  opacity: 0;
+  transform: translate3d(-10rem, 0, 0);
+  transition: 1s all ease-in;
+}
+
+.left-card-animation.active {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.right-card-animation {
+  opacity: 0;
+  transform: translate3d(10rem, 0, 0);
+  transition: 1s all ease-in;
+}
+
+.right-card-animation.active {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.fade-in-upwards { 
+  opacity: 0;
+  transform: translate3d(0, 5rem, 0);
+  transition: 1s all ease-in;
+}
+
+.fade-in-upwards.active {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.footer-border {
+  border-bottom: 1px solid rgb(155,157,158);
+}
+
+.footer-img {
+  width: 50px;
+  height: auto;
+}
+
+body { 
+  background-image: linear-gradient(to bottom, rgb(33,37,41), rgb(33, 37, 41), rgb(33, 39, 41));
+}
+
+@media only screen and (min-width: 992px) {
+  .topMarginForRow {
+    margin-top: 5rem;
+  }
+
+  #products {
+    margin-top: 6rem;
+  }
+
+  #roadmap {
+    margin-top: 6rem;
+  }
+
+  #footer {
+    background-color: rgb(49, 55, 61);
+    height: calc(100vh - 10rem);
+  }
+
+  .title-padding {
+    padding-left: 120px;
+  }
+
+  .card-text {
+    height: 114px;
+  }
+
+  .top-margin-tokenomics {
+    margin-top: 6rem;
+  }
+
+  .row4 {
+    padding: 1.5% 40%;
+  }
+
+  .top-margin-reach-us {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .topMarginForRow {
+    margin-top: 3rem;
+  }
+
+  .title-padding {
+    padding-left: 30px; 
+  }
+
+  #products {
+    margin-top: 3rem;
+  }
+
+  #roadmap {
+    margin-top: 3rem;
+  }
+
+  #footer {
+    background-color: rgb(49, 55, 61);
+    height: 70vh;
+  }
+
+  .img-adjust {
+    width: 30px;
+    height: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid{ 
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #footer {
+    background-color: rgb(49, 55, 61);
+    height: 125vh;
+  }
+
+  .title-padding {
+    padding-left: 20px; 
+  }
+}
