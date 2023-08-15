@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to RDEX</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container mx-auto border px-3 py-5 mt-5" style="width: 30%;">
+    <div class="row justify-content-center text-center mx-auto gap-3">
+      <div class="col-row w-50 mb-3">
+        <img src="./img/originalLogo.jpg" alt="logo" class="img-fluid w-25 rounded-2">
+      </div>
+      <div class="col-row">
+        <h3>Welcome to <strong>RDEX</strong>
+          <%= name %>
+        </h3>
+      </div>
+    </div>
+    <div class="container mx-auto mt-3">
+      <p>Hello <%= name %>,</p>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+        corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+        culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+      </p>
+      <p class="fst-italic">Click the below button to unsubscribe from our mailing list.</p>
+      <div class="row mx-auto my-4">
+        <a href="http://localhost:5000/unsubscribe/<%= email %>" class="btn btn-outline-danger col-3 mx-auto" onclick="unsubscribe()">
+          Unsubscribe
+        </a>
+      </div>
+    </div>
+    <div class="mx-auto border" style="width: 95%;"></div>
+    <div class="container mx-auto mt-4">
+      <p style="font-size: smaller;">This invitation was intended for <%= name %>.If you were not expecting this
+          invitation, you can ignore this email. If you are concerned about your
+          account's safety, please reply to this email to get in touch with us.</p>
+    </div>
+  </div>
+</body>
+
+</html>
