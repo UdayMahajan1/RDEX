@@ -30,7 +30,7 @@ export default function Footer() {
     }
     ax({
       method: 'post',
-      url: 'http://localhost:5000/sendMsg',
+      url: 'https://rdex.onrender.com',
       data: {
         name: nameRef.current.value,
         email: emailRef.current.value
