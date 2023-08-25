@@ -23,7 +23,7 @@ export default function ParticlesBg({ children }) {
         // options={{
         //   background: {
         //     color: {
-        //       value: 'rgb(33,37,41)',
+        //       value: 'rgb(1,0,1)',
         //     },
         //   },
         //   fullScreen: {
@@ -96,7 +96,8 @@ export default function ParticlesBg({ children }) {
           preset: "stars",
           background: {
             color: {
-              value: 'rgb(33,37,41)',
+              // value: 'rgb(33,37,41)',
+              value: 'rgb(1,0,1)',
             },
           },
           fullScreen: {

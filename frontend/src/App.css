@@ -7,6 +7,59 @@
   background-color: inherit;
 }
 
+.button {
+  font-family: 'El Messiri', sans-serif;
+  font-weight: 500;
+  color: white;
+  border-color: rgb(194, 5, 215);
+  justify-content: center;
+}
+
+.nav-button {
+  font-family: 'El Messiri', sans-serif;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(rgb(1, 0, 1), rgb(1, 0, 1)) padding-box,
+    linear-gradient(to right, rgba(195, 4, 215, 0.7), rgba(0, 89, 255, 0.5))
+      border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  justify-content: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.nav-button:hover {
+  background: linear-gradient(
+        to right,
+        rgba(195, 4, 215, 0.7),
+        rgba(0, 89, 255, 0.5)
+      ) padding-box,
+      linear-gradient(
+        to right,
+      rgba(195, 4, 215, 0.7), 
+      rgba(0, 89, 255, 0.5)
+      ) border-box;
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(194, 5, 215);
+  border-color: rgb(194, 5, 215);
+}
+
+.bg-Dark {
+  background-color: rgb(1, 0, 1);
+}
+
+.card-bg {
+  background-color: rgb(15, 14, 14);
+}
+
+.heading-font {
+  font-family: 'El Messiri', sans-serif;
+  z-index: 20;
+}
+
 #nightSky {
   width: 100vw;
   height: 100vh;
@@ -182,7 +235,7 @@
 }
 
 .footer-border {
-  border-top: 1px solid rgb(155, 157, 158);
+  border-top: 1px solid #c304d7;
 }
 
 .footer-img {
@@ -200,6 +253,50 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .left-gradient {
+    width: 442px;
+    height: 442px;
+    flex-shrink: 0;
+    border-radius: 442px;
+    opacity: 0.5;
+    background: rgba(195, 4, 215, 0.8);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+  }
+
+  .right-gradient {
+    width: 620px;
+    height: 620px;
+    flex-shrink: 0;
+    border-radius: 620px;
+    opacity: 0.5;
+    background: rgba(0, 89, 255, 0.5);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    right: -25%;
+  }
+
+  .tokenomics-width {
+    width: 60%;
+  }
+
+  .nav-padding {
+    padding: 0% 7%;
+  }
+
+  .about-us-margin {
+    margin: 8% 9% 0%;
+  }
+
+  .left-margin-for-nav-links {
+    margin-left: 2rem;
+  }
+
   .topMarginForRow {
     margin-top: 5rem;
   }
@@ -229,14 +326,14 @@
   }
 
   #footer {
-    background-color: rgb(49, 55, 61);
-    height: calc(100vh - 11rem);
+    background-color: rgb(24, 26, 25);
+    height: calc(100vh - 9rem);
     padding-left: 7rem;
-    padding-right: 7rem; 
+    padding-right: 7rem;
   }
 
   .title-padding {
-    padding-left: 120px;
+    padding-left: 35px;
   }
 
   .card-text {
@@ -279,7 +376,7 @@
   }
 
   #footer {
-    background-color: rgb(49, 55, 61);
+    background-color: rgb(24, 26, 25);
     height: 70vh;
   }
 
@@ -314,7 +411,7 @@
   }
 
   #footer {
-    background-color: rgb(49, 55, 61);
+    background-color: rgb(24, 26, 25);
     height: 125vh;
   }
 

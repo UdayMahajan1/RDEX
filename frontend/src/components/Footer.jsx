@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
-import logo from '../img/originalLogo.jpg'
+import logo from '../img/rdex.png'
 import facebook from '../img/facebook.png'
 import instagram from '../img/instagram-logo.png'
 import twitter from '../img/twitter.png'
 import github from '../img/social.png'
 import discord from '../img/logo.png'
 import database from '../FirebaseDb'
+import LeftGradient from './Circular Gradients/LeftGradient'
 import ax from 'axios';
 import { doc, setDoc } from "firebase/firestore";
 
@@ -39,16 +40,17 @@ export default function Footer() {
   }
 
   return (
-    <footer id="footer" className="container-fluid text-white pt-lg-5 pt-md-2 top-margin-and-padding-reach-us footer-border fade-in">
+    <footer id="footer" className="container-fluid text-white pt-lg-5 pt-md-2 top-margin-and-padding-reach-us fade-in position-relative">
+      <LeftGradient />
       <div className="container-fluid row justify-content-between mb-lg-5">
-        <div className="col-lg-5 mt-4">
+        <div className="col-lg-5">
           <div className="row justify-content-start gap-3">
-            <div className='col-2'>
-              <img src={logo} className="img-fluid rounded-circle" alt=".." />
+            <div className='col-auto'>
+              <img src={logo} className="img-fluid" alt=".." />
             </div>
-            <div className='col-6'>
+            {/* <div className='col-6'>
               <h1 className="display-5 mt-2 fw-semibold">RDEX</h1>
-            </div>
+            </div> */}
           </div>
           <div className='mt-4 pt-2'>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
