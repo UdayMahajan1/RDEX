@@ -93,7 +93,7 @@ export default function Footer() {
                   placeholder="Your Name" />
               </div>
             </div>
-            <div className="col-4">
+            <div id='subscribe' className="col-4">
               <button className="btn btn-lg custom" onClick={sendMsg}><strong>Subscribe</strong></button>
             </div>
           </div>

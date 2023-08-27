@@ -73,17 +73,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='overflow-hidden'>
-        <ParticlesBg >
-          <Intro />
-        </ParticlesBg>
-        <Products />
-        <div className='about-us-margin'>
-          <AboutUs />
-        </div>
-        <Roadmap />
-        <Tokenomics />
-        <Footer />
+      <div className='custom-overflow'>
+      <ParticlesBg>
+        <Intro />
+      </ParticlesBg>
+      <Products />
+      <AboutUs />
+      <Roadmap />
+      <Tokenomics />
+      <Footer />
       </div>
     </>
   );

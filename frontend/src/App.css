@@ -3,8 +3,12 @@
   font-weight: 500;
 }
 
-#carouselExampleFade {
+/* #carouselExampleFade {
   z-index: 9;
+} */
+
+.custom-overflow {
+  overflow: clip;
 }
 
 .transparent-background {
@@ -17,6 +21,7 @@
   color: white;
   border-color: rgb(194, 5, 215);
   justify-content: center;
+  border-width: 3px;
 }
 
 .button-whitepaper {
@@ -26,6 +31,7 @@
   background-color: rgb(194, 5, 215);
   border-color: rgb(194, 5, 215);
   justify-content: center;
+  border-width: 3px;
 }
 
 .nav-button {
@@ -59,8 +65,8 @@
 }
 
 .button-whitepaper:hover {
-  background-color: rgba(162, 0, 178, 0.90);
-  border-color: rgba(162, 0, 178, 0.90);
+  background-color: rgba(162, 0, 178, 0.9);
+  border-color: rgba(162, 0, 178, 0.9);
 }
 
 .bg-Dark {
@@ -273,7 +279,15 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .nav-link-font {
+  .button {
+    font-size: 1.4vw;
+  }
+
+  .button-whitepaper {
+    font-size: 1.4vw;
+  }
+
+  .navbar-link-font {
     font-size: 1.2vw;
   }
 
@@ -292,16 +306,24 @@
     white-space: nowrap;
   }
 
+  .card-body-height { 
+    height: 11vw;
+  }
+
+  .card-body-height-active { 
+    height: 36.49vw;
+  }
+
   .card-desc {
     font-size: 1.2vw;
   }
 
   .card-Title {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
 
   .card-Title-flex {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 
   .left-gradient {
@@ -340,6 +362,10 @@
     padding: 0% 6%;
   }
 
+  .flex-products-padding {
+    padding: 0% 7%;
+  }
+
   .intro-padding {
     padding-left: 7%;
   }
@@ -348,9 +374,9 @@
     margin: 8% 9% 0%;
   }
 
-  .left-margin-for-nav-links {
+  /* .left-margin-for-navbar-links {
     margin-left: 2rem;
-  }
+  } */
 
   .topMarginForRow {
     margin-top: 5rem;
@@ -410,13 +436,41 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .left-gradient {
+    width: 45vw;
+    height: 45vw;
+    flex-shrink: 0;
+    border-radius: 50vw;
+    opacity: 0.8;
+    background: rgba(195, 4, 215, 0.8);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    left: -35%;
+  }
+
+  .right-gradient {
+    width: 45vw;
+    height: 45vw;
+    flex-shrink: 0;
+    border-radius: 50vw;
+    opacity: 0.8;
+    background: rgba(0, 89, 255, 0.5);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    right: -25%;
+  }
+
   .intro-heading-font {
-    font-size: 5vw;
+    font-size: 4.5vw;
     white-space: nowrap;
   }
 
   .intro-desc-font {
-    font-size: 2vw;
+    font-size: 1.8vw;
     white-space: wrap;
   }
 
@@ -445,12 +499,20 @@
     padding: 0% 3%;
   }
 
+  .about-us-margin {
+    margin: 7% 4.7% 0%;
+  }
+
   .navbar-icon {
     max-width: 50px;
   }
 
   .title-padding {
     padding-left: 30px;
+  }
+
+  .flex-products-padding {
+    padding: 0% 11%;
   }
 
   .left-card-animation {
@@ -489,8 +551,36 @@
 
 @media only screen and (max-width: 767px) {
 
+  .left-gradient {
+    width: 60vw;
+    height: 60vw;
+    flex-shrink: 0;
+    border-radius: 50vw;
+    opacity: 0.8;
+    background: rgba(195, 4, 215, 0.8);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    left: -35%;
+  }
+
+  .right-gradient {
+    width: 60vw;
+    height: 60vw;
+    flex-shrink: 0;
+    border-radius: 50vw;
+    opacity: 0.8;
+    background: rgba(0, 89, 255, 0.5);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    right: -25%;
+  }
+
   .intro-heading-font {
-    font-size: 6vw;
+    font-size: 7vw;
     white-space: nowrap;
   }
 
@@ -505,11 +595,11 @@
   }
 
   .card-desc {
-    font-size: 1.6vw;
+    font-size: 2vw;
   }
 
   .card-Title {
-    font-size: 3.8vw;
+    font-size: 4vw;
   }
 
   .intro-padding {
@@ -517,8 +607,12 @@
   }
 
   /* .nav-padding {
-    padding: 0% 4%;
+    padding: 0% 3%;
   } */
+
+  .flex-products-padding {
+    padding-left: 15%;
+  }
 
   .left-card-animation {
     opacity: 0;
@@ -547,17 +641,54 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+  #products {
+    margin-top: 5%;
+  }
+
+  .left-gradient {
+    width: 65vw;
+    height: 65vw;
+    flex-shrink: 0;
+    border-radius: 50vw;
+    opacity: 0.8;
+    background: rgba(195, 4, 215, 0.8);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    left: -35%;
+  }
+
+  .right-gradient {
+    width: 65vw;
+    height: 65vw;
+    flex-shrink: 0;
+    border-radius: 50vw;
+    opacity: 0.8;
+    background: rgba(0, 89, 255, 0.5);
+    filter: blur(225px);
+    z-index: 10;
+    position: absolute;
+    top: -10%;
+    right: -25%;
+  }
+
+  .about-us-margin {
+    margin-top: 15%;
+  }
+
   .nav-padding {
     padding: 5% 2%;
   }
 
   .intro-heading-font {
-    font-size: 10vw;
+    font-size: 11vw;
     white-space: nowrap;
   }
 
   .intro-desc-font {
-    font-size: 4vw;
+    font-size: 3.9vw;
     white-space: wrap;
   }
 
@@ -567,14 +698,18 @@
   }
 
   .card-desc {
-    font-size: 3.2vw;
+    font-size: 3.4vw;
   }
 
   .card-Title {
-    font-size: 7.6vw;
+    font-size: 8vw;
   }
 
   .card-img {
     max-height: 80vw;
+  }
+
+  .flex-products-padding {
+    padding: 0% 8%;
   }
 }
