@@ -18,6 +18,8 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
     }
   }
 
+  // 
+
   return (
     <div className="col-md-5 col-sm-9 mb-lg-2 mb-5 scaleUp overflow-hidden">
       <div className={'card ' + fadeInAnimation + '-card-animation card-bg text-light border-0 rounded-5 p-lg-3 p-md-2 p-2'}>
