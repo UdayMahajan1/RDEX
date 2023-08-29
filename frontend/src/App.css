@@ -1,3 +1,20 @@
+::-webkit-input-placeholder {
+  /* Edge */
+  color: white;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: white;
+  font-style: italic;
+}
+
+::placeholder {
+  color: white;
+  font-style: italic;
+}
+
 .navbar-brand {
   font-family: 'Source Code Pro';
   font-weight: 500;
@@ -43,8 +60,22 @@
 }
 
 .button-whitepaper:hover {
-  background-color: #9100A1;
-  border-color: #9100A1;
+  background-color: #9100a1;
+  border-color: #9100a1;
+}
+
+.button-footer {
+  font-family: 'El Messiri', sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: #c304d7;
+  justify-content: center;
+  border-width: 2px;
+}
+
+.button-footer:hover {
+  background-color: #9100a1;
+  border-color: #9100a1;
 }
 
 /* #C304D7 */
@@ -73,7 +104,6 @@
       border-box;
   color: white;
 }
-
 
 .card-bg {
   background-color: rgb(15, 14, 14);
@@ -193,7 +223,7 @@
 }
 
 .scaleUp:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .fade-in {
@@ -268,6 +298,11 @@
     transform: translate3d(0, 15rem, 0);
   }
 
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -35px, 0);
+  }
+
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -275,13 +310,18 @@
 }
 
 .fade-in-cards {
-  animation: fadeUp 0.2s ease-in;
+  animation: fadeUp 0.25s ease-in;
 }
 
 @keyframes fadeDown {
   0% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+
+  45% {
+    opacity: 1;
+    transform: translate3d(0, -50px, 0);
   }
 
   100% {
@@ -291,7 +331,7 @@
 }
 
 .deactivate {
-  animation: fadeDown 0.2s ease-out;
+  animation: fadeDown 0.25s ease-out;
 }
 
 .footer-border {
@@ -314,25 +354,33 @@
 
 .footer-link {
   font-weight: normal;
-  transition: 0.4s all ease-in ;
+  color: white;
+  transition: 0.4s all ease-in;
 }
 
 .footer-link:hover {
   color: #c304d7;
-  text-decoration: underline;
 }
 
 .footer-socials {
   background-color: #c304d7;
-  transition: 0.4s all ease-in ;
+  transition: 0.4s all ease-in;
 }
 
 .footer-socials:hover {
-  background-color: #9100A1;
+  background-color: #9100a1;
+}
+
+.navbar-link-font {
+  color: white;
+  transition: 0.4s all ease-in;
+}
+
+.navbar-link-font:hover {
+  color: #c304d7;
 }
 
 @media only screen and (min-width: 992px) {
-
   .style-svg {
     width: 7vw;
     height: 2.7vw;
@@ -356,6 +404,12 @@
     padding: 0.7vw 0;
   }
 
+  .button-footer {
+    font-size: 1.2vw;
+    padding: 1.35vh 2.8vw;
+    max-width: 11vw;
+  }
+
   .navbar-link-font {
     font-size: 1.1vw;
   }
@@ -376,11 +430,11 @@
   }
 
   .card-body-height {
-    height: 11vw;
+    height: 13.5vw;
   }
 
   .card-body-height-active {
-    height: 26.5vw;
+    height: 27.3vw;
   }
 
   .card-desc {
@@ -396,7 +450,7 @@
   }
 
   .padding-card-top {
-    padding: 0vw 2vw;
+    padding: 0vw 0.8vw;
   }
 
   .left-gradient {
@@ -447,10 +501,6 @@
     margin: 8% 9% 0%;
   }
 
-  /* .left-margin-for-navbar-links {
-    margin-left: 2rem;
-  } */
-
   .topMarginForRow {
     margin-top: 5rem;
   }
@@ -480,12 +530,12 @@
   }
 
   #footer {
-    background-color: rgb(24, 26, 25);
+    background-color: rgba(25, 26, 24, 1);
     height: auto;
-    padding: 0% 8vw 1vw; 
+    padding: 0% 8vw 1vw;
   }
 
-  .footer-text { 
+  .footer-text {
     font-size: 1.2vw;
     font-weight: 400;
   }
@@ -511,22 +561,21 @@
     padding-top: 5rem;
   }
 
-  .custom-input {     
+  .custom-input {
     border: 3px solid #c304d7;
     width: 22vw;
     height: 6.4vh;
-    background-color: rgb(24, 26, 25);
+    background-color: rgba(25, 26, 24, 1);
     color: white;
     padding-left: 1vw;
   }
 
-  .footer-socials { 
+  .footer-socials {
     padding: 0.55vw;
   }
 }
 
 @media only screen and (max-width: 992px) {
-
   .style-svg {
     width: 7.4vw;
     height: 3vw;
@@ -542,7 +591,7 @@
   }
 
   .card-body-height {
-    height: 14.9vw;
+    height: 16.7vw;
   }
 
   .card-body-height-active {
@@ -668,8 +717,9 @@
   }
 
   #footer {
-    background-color: rgb(24, 26, 25);
-    height: 70vh;
+    background-color: rgba(25, 26, 24, 1);
+    height: auto;
+    padding: 0% 8vw 1vw;
   }
 
   .img-adjust {
@@ -678,10 +728,28 @@
     margin-left: 0;
     padding-left: 0;
   }
+
+  .custom-input {
+    border: 3px solid #c304d7;
+    width: 20vw;
+    height: 6.4vh;
+    background-color: rgba(25, 26, 24, 1);
+    color: white;
+    padding-left: 1vw;
+  }
+
+  .button-footer {
+    font-size: 1.5vw;
+    padding: 1.3vh 2.5vw;
+    max-width: 11vw;
+  }
+
+  .footer-socials {
+    padding: 0.7vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-
   .style-svg {
     width: 10vw;
     height: 5vw;
@@ -716,8 +784,8 @@
     filter: blur(225px);
     z-index: 10;
     position: absolute;
-    top: -10%;
-    left: -35%;
+    top: -30%;
+    left: -50%;
   }
 
   .right-gradient {
@@ -730,8 +798,8 @@
     filter: blur(225px);
     z-index: 10;
     position: absolute;
-    top: -10%;
-    right: -25%;
+    top: -30%;
+    right: -50%;
   }
 
   .intro-heading-font {
@@ -790,8 +858,9 @@
   }
 
   #footer {
-    background-color: rgb(24, 26, 25);
-    height: 125vh;
+    background-color: rgba(25, 26, 24, 1);
+    height: auto;
+    padding: 5vw 3vw 1vw;
   }
 
   .title-padding {
@@ -801,10 +870,43 @@
   .card-img {
     max-height: 30vw;
   }
+
+  .footer-socials {
+    padding: 1.5vw;
+  }
+
+  .footer-text {
+    font-size: 2.4vw;
+    font-weight: 400;
+  }
+
+  .footer-logo {
+    width: 25vw;
+    height: auto;
+  }
+
+  .custom-input {
+    border: 3px solid #c304d7;
+    width: 35vw;
+    height: 6.4vh;
+    background-color: rgba(25, 26, 24, 1);
+    color: white;
+    padding-left: 1vw;
+  }
+
+  .button-footer {
+    font-size: 2vw;
+    padding: 1.35vh 4.5vw;
+    max-width: 40vw;
+  }
+
+  .footer-img {
+    width: 3vw;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-
   .style-svg {
     width: 13vw;
     height: 5vw;
@@ -906,5 +1008,34 @@
 
   .card-body-height-active {
     height: 50vw;
+  }
+
+  .footer-text {
+    font-size: 2.8vw;
+    font-weight: 400;
+  }
+
+  .custom-input {
+    border: 3px solid #c304d7;
+    width: 60vw;
+    height: 6.4vh;
+    background-color: rgba(25, 26, 24, 1);
+    color: white;
+    padding-left: 1vw;
+  }
+
+  .button-footer {
+    font-size: 2vw;
+    padding: 1.35vh 10.7vw;
+    max-width: 50vw;
+  }
+
+  .footer-socials {
+    padding: 3vw;
+  }
+
+  .footer-img {
+    width: 5vw;
+    height: auto;
   }
 }

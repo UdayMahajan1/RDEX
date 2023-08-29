@@ -18,14 +18,14 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           {/* <div className="navbar-nav gap-lg-4 left-margin-for-nav-links"> */}
           <div className="navbar-nav gap-lg-5 gap-md-2 mx-md-auto ms-2 mt-md-0 mt-3 text-uppercase">
-            <a className="nav-link navbar-link-font fw-semibold text-white" href="#products">Products</a>
-            <a className="nav-link navbar-link-font fw-semibold text-white" href="#about">About us</a>
-            <a className="nav-link navbar-link-font fw-semibold text-white" href="#roadmap">Roadmap</a>
-            <a className="nav-link navbar-link-font fw-semibold text-white" href="#tokenomics">Tokenomics</a>
-            <a className="nav-link navbar-link-font fw-semibold text-white" href="#footer">Reach us</a>
-            <div className="d-md-none d-sm-block mt-sm-3">
+            <a className="nav-link navbar-link-font fw-semibold" href="#products">Products</a>
+            <a className="nav-link navbar-link-font fw-semibold" href="#about">About us</a>
+            <a className="nav-link navbar-link-font fw-semibold" href="#roadmap">Roadmap</a>
+            <a className="nav-link navbar-link-font fw-semibold" href="#tokenomics">Tokenomics</a>
+            <a className="nav-link navbar-link-font fw-semibold" href="#footer">Reach us</a>
+            {/* <div className="d-md-none d-sm-block mt-sm-3">
               <a href='#subscribe' className="btn nav-button btn-sm rounded-pill px-4 py-2">Subscribe</a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="d-flex d-none d-md-block">
