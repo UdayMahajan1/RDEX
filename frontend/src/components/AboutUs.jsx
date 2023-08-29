@@ -1,6 +1,7 @@
 import React from 'react'
 import aboutUsImg from '../img/about.png'
 import RightGradient from './Circular Gradients/RightGradient';
+import Vector from './Vector';
 
 export default function AboutUs() {
 
@@ -9,7 +10,8 @@ export default function AboutUs() {
     <>
       <div className="position-relative about-us-margin">
         <RightGradient />
-        <div id="about" className="container-fluid pb-lg-5 p-sm-5 p-3 ms-0 card-bg rounded-5 row justify-content-center gap-lg-5 fade-in">
+        <Vector sectionName='about us' />
+        <div id="about" className="container-fluid pb-lg-5 p-sm-5 p-3 ms-0 mt-lg-4 card-bg rounded-5 row justify-content-center gap-lg-5 fade-in">
           <div className="d-none d-lg-block col-lg-6 transparent-background">
             <img className="img-fluid pulsing-element" src={aboutUsImg} alt='gif'/>
           </div>

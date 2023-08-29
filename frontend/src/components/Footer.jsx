@@ -1,10 +1,8 @@
 import React, { useRef } from 'react'
 import logo from '../img/rdex.png'
-import facebook from '../img/facebook.png'
-import instagram from '../img/instagram-logo.png'
+import mail from '../img/email.png'
+import telegram from '../img/telegram.png'
 import twitter from '../img/twitter.png'
-import github from '../img/social.png'
-import discord from '../img/logo.png'
 import database from '../FirebaseDb'
 import LeftGradient from './Circular Gradients/LeftGradient'
 import ax from 'axios';
@@ -53,68 +51,62 @@ export default function Footer() {
             </div> */}
           </div>
           <div className='mt-4 pt-2'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p className='footer-text space lh-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
         </div>
         <div className="col-lg-5 mt-3">
           <div className="row justify-content-lg-between">
             <div className="col-lg-auto col-sm-row mt-lg-0 mt-2">
-              <p className="fs-5 fw-semibold mb-lg-3 mb-1">MENU</p>
-              <p className="fw-normal mb-1 stats-description">ROADMAP</p>
-              <p className="fw-normal mb-1 stats-description">TOKENOMICS</p>
+              <p className="fs-5 fw-semibold mb-lg-4 mb-1">MENU</p>
+              <p className="footer-link mb-4 stats-description">ROADMAP</p>
+              <p className="footer-link mb-4 stats-description">TOKENOMICS</p>
             </div>
             <div className="col-lg-auto col-sm-row mt-lg-0 mt-2">
-              <p className="fs-5 fw-semibold mb-lg-3 mb-1">PRODUCTS</p>
-              <p className="fw-normal mb-1 stats-description">PRODUCT 1</p>
-              <p className="fw-normal mb-1 stats-description">PRODUCT 1</p>
-              <p className="fw-normal mb-1 stats-description">PRODUCT 2</p>
-              <p className="fw-normal mb-1 stats-description">PRODUCT 2</p>
-              <p className="fw-normal mb-1 stats-description">PRODUCT 3</p>
+              <p className="fs-5 fw-semibold mb-lg-4 mb-1">PRODUCTS</p>
+              <p className="footer-link mb-4 stats-description">PRODUCT 1</p>
+              <p className="footer-link mb-4 stats-description">PRODUCT 1</p>
+              <p className="footer-link mb-4 stats-description">PRODUCT 2</p>
+              <p className="footer-link mb-4 stats-description">PRODUCT 2</p>
+              <p className="footer-link mb-4 stats-description">PRODUCT 3</p>
             </div>
             <div className="col-lg-auto col-sm-row mt-lg-0 mt-2">
-              <p className="fs-5 fw-semibold mb-lg-3 mb-1">COMPANY</p>
-              <p className="fw-normal mb-1 stats-description">ROADMAP</p>
-              <p className="fw-normal mb-1 stats-description">TOKENOMICS</p>
+              <p className="fs-5 fw-semibold mb-lg-4 mb-1">COMPANY</p>
+              <p className="footer-link mb-4 stats-description">ROADMAP</p>
+              <p className="footer-link mb-4 stats-description">TOKENOMICS</p>
             </div>
           </div>
         </div>
       </div>
       <div className="container-fluid row justify-content-between my-lg-5">
         <div className="col-lg-5">
-          <p className='fs-2 fw-semibold'>Stay up to date</p>
+          <p className='fs-4 fw-semibold'>Stay up to date</p>
           <div className="my-4 row">
             <div className="input-group input-group-lg mb-3">
-              <input type="email" className="form-control rounded-3" id="exampleInputEmail1" aria-describedby="emailHelp" ref={emailRef}
+              <input type="email" className="custom-input rounded-5" id="exampleInputEmail1" aria-describedby="emailHelp" ref={emailRef}
                 placeholder="Your Email" />
             </div>
             <div className='col-8'>
               <div className="input-group input-group-lg">
-                <input type="text" className="form-control rounded-3" id="name" ref={nameRef}
+                <input type="text" className="custom-input rounded-5" id="name" ref={nameRef}
                   placeholder="Your Name" />
               </div>
             </div>
             <div id='subscribe' className="col-4">
-              <button className="btn btn-lg custom" onClick={sendMsg}><strong>Subscribe</strong></button>
+              <button type="button" className="btn button-whitepaper btn-lg border-0 rounded-pill px-lg-5 text-center">Subscribe</button>
             </div>
           </div>
         </div>
         <div className="col-lg-5">
-          <p className='fs-2 fw-semibold mb-3'>Our Community</p>
-          <div className="row justify-content-start mb-3">
-            <div className="col-auto">
-              <a href="#"><img src={instagram} className="footer-img scaleUp" alt="" /></a>
+          <p className='fs-4 fw-semibold mb-3'>Our Community</p>
+          <div className="row justify-content-start gap-lg-4 my-3">
+            <div className="col-auto scaleUp rounded-circle footer-socials">
+              <a href="#"><img src={telegram} className="footer-img" alt="" /></a>
             </div>
-            <div className="col-auto">
-              <a href="#"><img src={facebook} className="footer-img scaleUp" alt="" /></a>
+            <div className="col-auto scaleUp rounded-circle footer-socials">
+              <a href="#"><img src={mail} className="footer-img" alt="" /></a>
             </div>
-            <div className="col-auto">
-              <a href="#"><img src={twitter} className="footer-img scaleUp" alt="" /></a>
-            </div>
-            <div className="col-auto">
-              <a href="#"><img src={github} className="footer-img scaleUp" alt="" /></a>
-            </div>
-            <div className="col-auto">
-              <a href="#"><img src={discord} className="footer-img scaleUp" alt="" /></a>
+            <div className="col-auto scaleUp rounded-circle footer-socials">
+              <a href="#"><img src={twitter} className="footer-img" alt="" /></a>
             </div>
           </div>
         </div>
@@ -122,8 +114,8 @@ export default function Footer() {
       <div className="row justify-content-center">
         <div className="col-12 footer-border"></div>
       </div>
-      <div className="text-start mt-4 mb-1">
-        <p>© 2023 RDEX all rights reserved</p>
+      <div className="text-start mt-4">
+        <p>© 2023 RDEX, All Rights Reserved</p>
       </div>
     </footer>
   )

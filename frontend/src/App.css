@@ -11,6 +11,10 @@
   overflow: clip;
 }
 
+.bg-Dark {
+  background-color: rgb(1, 0, 1);
+}
+
 .transparent-background {
   background-color: inherit;
 }
@@ -19,20 +23,31 @@
   font-family: 'El Messiri', sans-serif;
   font-weight: 500;
   color: white;
-  border-color: rgb(194, 5, 215);
+  border-color: #c304d7;
   justify-content: center;
-  border-width: 3px;
+  border-width: 2px;
+}
+
+.button:hover {
+  background-color: #c304d7;
+  border-color: #c304d7;
 }
 
 .button-whitepaper {
   font-family: 'El Messiri', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   color: white;
-  background-color: rgb(194, 5, 215);
-  border-color: rgb(194, 5, 215);
+  background-color: #c304d7;
   justify-content: center;
-  border-width: 3px;
+  border-width: 2px;
 }
+
+.button-whitepaper:hover {
+  background-color: #9100A1;
+  border-color: #9100A1;
+}
+
+/* #C304D7 */
 
 .nav-button {
   font-family: 'El Messiri', sans-serif;
@@ -59,19 +74,6 @@
   color: white;
 }
 
-.button:hover {
-  background-color: rgb(194, 5, 215);
-  border-color: rgb(194, 5, 215);
-}
-
-.button-whitepaper:hover {
-  background-color: rgba(162, 0, 178, 0.9);
-  border-color: rgba(162, 0, 178, 0.9);
-}
-
-.bg-Dark {
-  background-color: rgb(1, 0, 1);
-}
 
 .card-bg {
   background-color: rgb(15, 14, 14);
@@ -83,7 +85,7 @@
 }
 
 .card-img {
-  max-height: 30vw;
+  max-height: 20vw;
 }
 
 #nightSky {
@@ -236,7 +238,7 @@
 
 .card-border {
   border-style: solid;
-  border-color: rgb(87, 92, 96);
+  border-width: 0px;
 }
 
 .left-card-animation.active {
@@ -260,12 +262,28 @@
   transform: translate3d(0, 0, 0);
 }
 
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5rem, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade-in-cards {
+  animation: fadeDown 1s ease-in;
+}
+
 .footer-border {
   border-top: 1px solid #c304d7;
 }
 
 .footer-img {
-  width: 50px;
+  width: 2.5vw;
   height: auto;
 }
 
@@ -278,17 +296,52 @@
   color: white;
 }
 
+.footer-link {
+  font-weight: normal;
+  transition: 0.4s all ease-in ;
+}
+
+.footer-link:hover {
+  color: #c304d7;
+  text-decoration: underline;
+}
+
+.footer-socials {
+  background-color: #c304d7;
+  transition: 0.4s all ease-in ;
+}
+
+.footer-socials:hover {
+  background-color: #9100A1;
+}
+
 @media only screen and (min-width: 992px) {
+
+  .style-svg {
+    width: 7vw;
+    height: 2.7vw;
+  }
+
+  .vector-text {
+    text-transform: uppercase;
+    font-size: 1.5vw;
+  }
+
+  .nav-button {
+    font-size: 1.3vw;
+  }
+
   .button {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
   }
 
   .button-whitepaper {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
+    padding: 0.7vw 0;
   }
 
   .navbar-link-font {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
   }
 
   .intro-heading-font {
@@ -306,12 +359,12 @@
     white-space: nowrap;
   }
 
-  .card-body-height { 
+  .card-body-height {
     height: 11vw;
   }
 
-  .card-body-height-active { 
-    height: 36.49vw;
+  .card-body-height-active {
+    height: 26.5vw;
   }
 
   .card-desc {
@@ -324,6 +377,10 @@
 
   .card-Title-flex {
     font-size: 4vw;
+  }
+
+  .padding-card-top {
+    padding: 0vw 2vw;
   }
 
   .left-gradient {
@@ -408,9 +465,13 @@
 
   #footer {
     background-color: rgb(24, 26, 25);
-    height: calc(100vh - 9rem);
-    padding-left: 7rem;
-    padding-right: 7rem;
+    height: auto;
+    padding: 0% 8vw 1vw; 
+  }
+
+  .footer-text { 
+    font-size: 1.2vw;
+    font-weight: 400;
   }
 
   .title-padding {
@@ -433,9 +494,55 @@
     margin-top: 6rem;
     padding-top: 5rem;
   }
+
+  .custom-input {     
+    border: 3px solid #c304d7;
+    width: 22vw;
+    height: 6.4vh;
+    background-color: rgb(24, 26, 25);
+    color: white;
+    padding-left: 1vw;
+  }
+
+  .footer-socials { 
+    padding: 0.55vw;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+
+  .style-svg {
+    width: 7.4vw;
+    height: 3vw;
+  }
+
+  .vector-text {
+    text-transform: uppercase;
+    font-size: 1.5vw;
+  }
+
+  .nav-button {
+    font-size: 1.7vw;
+  }
+
+  .card-body-height {
+    height: 14.9vw;
+  }
+
+  .card-body-height-active {
+    height: 32.3vw;
+  }
+
+  .button {
+    font-size: 1.7vw;
+    padding: 0.8vw 3.2vw;
+  }
+
+  .button-whitepaper {
+    font-size: 1.7vw;
+    padding: 0.8vw 3.2vw;
+  }
+
   .left-gradient {
     width: 45vw;
     height: 45vw;
@@ -465,12 +572,12 @@
   }
 
   .intro-heading-font {
-    font-size: 4.5vw;
+    font-size: 4.6vw;
     white-space: nowrap;
   }
 
   .intro-desc-font {
-    font-size: 1.8vw;
+    font-size: 1.7vw;
     white-space: wrap;
   }
 
@@ -487,16 +594,24 @@
     font-size: 3.8vw;
   }
 
+  .card-img {
+    max-height: 25vw;
+  }
+
   .topMarginForRow {
     margin-top: 3rem;
   }
 
   .intro-padding {
-    padding-left: 2.8%;
+    padding-left: 0%;
   }
 
   .nav-padding {
-    padding: 0% 3%;
+    padding: 0% 4.8%;
+  }
+
+  .navbar-link-font {
+    font-size: 1.4vw;
   }
 
   .about-us-margin {
@@ -551,6 +666,30 @@
 
 @media only screen and (max-width: 767px) {
 
+  .style-svg {
+    width: 10vw;
+    height: 5vw;
+  }
+
+  .vector-text {
+    text-transform: uppercase;
+    font-size: 1.8vw;
+  }
+
+  .padding-card-top {
+    padding: 0vw 2.2vw;
+  }
+
+  .button {
+    font-size: 2.2vw;
+    padding: 0.8vw 3.2vw;
+  }
+
+  .button-whitepaper {
+    font-size: 2.2vw;
+    padding: 0.8vw 3.2vw;
+  }
+
   .left-gradient {
     width: 60vw;
     height: 60vw;
@@ -590,20 +729,28 @@
   }
 
   .section-heading-font {
-    font-size: 4.5vw;
+    font-size: 6.3vw;
     white-space: nowrap;
   }
 
   .card-desc {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
 
   .card-Title {
-    font-size: 4vw;
+    font-size: 6vw;
+  }
+
+  .card-body-height {
+    height: 23vw;
+  }
+
+  .card-body-height-active {
+    height: 40vw;
   }
 
   .intro-padding {
-    padding-left: 5.5%;
+    padding-left: 5%;
   }
 
   /* .nav-padding {
@@ -636,14 +783,38 @@
   }
 
   .card-img {
-    max-height: 60vw;
+    max-height: 30vw;
   }
 }
 
 @media only screen and (max-width: 576px) {
 
+  .style-svg {
+    width: 13vw;
+    height: 5vw;
+  }
+
+  .vector-text {
+    text-transform: uppercase;
+    font-size: 2.3vw;
+  }
+
   #products {
     margin-top: 5%;
+  }
+
+  .padding-card-top {
+    padding: 0vw 3vw;
+  }
+
+  .button {
+    font-size: 4vw;
+    padding: 1vw 3.4vw;
+  }
+
+  .button-whitepaper {
+    font-size: 4vw;
+    padding: 1vw 3.4vw;
   }
 
   .left-gradient {
@@ -706,10 +877,18 @@
   }
 
   .card-img {
-    max-height: 80vw;
+    max-height: 56vw;
   }
 
   .flex-products-padding {
     padding: 0% 8%;
+  }
+
+  .card-body-height {
+    height: 30vw;
+  }
+
+  .card-body-height-active {
+    height: 50vw;
   }
 }
