@@ -262,10 +262,10 @@
   transform: translate3d(0, 0, 0);
 }
 
-@keyframes fadeDown {
+@keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, -5rem, 0);
+    transform: translate3d(0, 15rem, 0);
   }
 
   100% {
@@ -275,7 +275,23 @@
 }
 
 .fade-in-cards {
-  animation: fadeDown 1s ease-in;
+  animation: fadeUp 0.2s ease-in;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 15rem, 0);
+  }
+}
+
+.deactivate {
+  animation: fadeDown 0.2s ease-out;
 }
 
 .footer-border {

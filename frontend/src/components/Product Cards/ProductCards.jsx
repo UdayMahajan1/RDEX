@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import originalLogo from '../../img/white dragon.png';
 
 export default function ProductCards({ id, img, title, desc, addDesc }) {
@@ -6,10 +6,16 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
   const fadeInAnimation = id % 2 === 0 ? 'left' : 'right';
   const [active, setActive] = useState(false);
   const buttonText = active ? 'Read less' : 'Read more';
-  const fadeDownAnimation = active ? 'activate' : '';
 
   const handleClick = () => {
-    setActive(!active);
+    if(!active) {
+      setActive(true);
+    } else {
+      document.querySelector('.fade-in-cards').classList.replace('fade-in-cards', 'deactivate');
+      setTimeout(() => {
+        setActive(false);
+      }, 200)
+    }
   }
 
   return (
@@ -24,7 +30,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
             </div>  
           </div>
           :
-          <div className={'fade-in-cards activate'}>
+          <div className={'fade-in-cards'}>
             <div className='row justify-content-lg-between px-lg-0 ps-md-3'>
               <div className="col-lg-4 col-3">
                 {/* <img src={originalLogo} className='img-fluid px-lg-4 px-md-0 px-sm-2 px-3 mt-lg-1 mt-2' alt='...' /> */}
