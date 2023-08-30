@@ -447,6 +447,17 @@
     font-size: 4vw;
   }
 
+  .card-height {
+    height: 42vw;
+  }
+
+  .card-button-div { 
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+    right: 0;
+  }
+
   .padding-card-top {
     padding: 0vw 0.8vw;
   }
@@ -459,7 +470,7 @@
     opacity: 0.5;
     background: rgba(195, 4, 215, 0.8);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -10%;
     left: -25%;
@@ -473,7 +484,7 @@
     opacity: 0.5;
     background: rgba(0, 89, 255, 0.5);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -10%;
     right: -25%;
@@ -488,7 +499,7 @@
   }
 
   .flex-products-padding {
-    padding: 0% 7%;
+    padding: 0% 0%;
   }
 
   .intro-padding {
@@ -596,6 +607,17 @@
     height: 32.3vw;
   }
 
+  .card-height {
+    height: 57vw;
+  }
+
+  .card-button-div { 
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+    right: 0;
+  }
+
   .button {
     font-size: 1.7vw;
     padding: 0.8vw 3.2vw;
@@ -614,7 +636,7 @@
     opacity: 0.8;
     background: rgba(195, 4, 215, 0.8);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -10%;
     left: -35%;
@@ -628,7 +650,7 @@
     opacity: 0.8;
     background: rgba(0, 89, 255, 0.5);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -10%;
     right: -25%;
@@ -780,7 +802,7 @@
     opacity: 0.8;
     background: rgba(195, 4, 215, 0.8);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -30%;
     left: -50%;
@@ -794,7 +816,7 @@
     opacity: 0.8;
     background: rgba(0, 89, 255, 0.5);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 3;
     position: absolute;
     top: -30%;
     right: -50%;
@@ -829,6 +851,10 @@
 
   .card-body-height-active {
     height: 40vw;
+  }
+
+  .card-height {
+    height: 75vw;
   }
 
   .intro-padding {
@@ -941,7 +967,7 @@
     opacity: 0.8;
     background: rgba(195, 4, 215, 0.8);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -10%;
     left: -35%;
@@ -955,7 +981,7 @@
     opacity: 0.8;
     background: rgba(0, 89, 255, 0.5);
     filter: blur(225px);
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     top: -10%;
     right: -25%;
@@ -996,16 +1022,20 @@
     max-height: 56vw;
   }
 
+  .card-height {
+    height: 125vw;
+  }
+
   .flex-products-padding {
     padding: 0% 8%;
   }
 
   .card-body-height {
-    height: 30vw;
+    height: 33vw;
   }
 
   .card-body-height-active {
-    height: 50vw;
+    height: 76vw;
   }
 
   .footer-text {

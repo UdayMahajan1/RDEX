@@ -22,7 +22,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
 
   return (
     <div className="col-md-5 col-sm-9 mb-lg-2 mb-5 scaleUp overflow-hidden">
-      <div className={'card ' + fadeInAnimation + '-card-animation card-bg text-light border-0 rounded-5 p-lg-3 p-md-2 p-2'}>
+      <div className={'card ' + fadeInAnimation + '-card-animation card-bg card-height text-light border-0 rounded-5 p-lg-3 p-md-2 p-2 position-relative'}>
         {!active ?
           <div>
             <img src={img} className="card-img rounded-5 px-lg-5 px-md-0 px-5" alt="..." />
@@ -32,7 +32,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
             </div>
           </div>
           :
-          <div className={'fade-in-cards'}>
+          <div className='fade-in-cards'>
             <div className='row justify-content-lg-start ps-lg-3 ps-md-3 align-items-center'>
               <div className="col-3">
                 {/* <img src={originalLogo} className='img-fluid px-lg-4 px-md-0 px-sm-2 px-3 mt-lg-1 mt-2' alt='...' /> */}
@@ -47,9 +47,11 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
             </div>
           </div>
         }
-        <div className="row justify-content-lg-start justify-content-evenly gap-lg-3 pt-2 px-lg-2 px-4 pb-lg-0 pb-md-2 pb-sm-3 mb-3 ms-lg-0 mt-lg-3">
-          <button type="button" className="col-lg-5 btn button btn-md rounded-pill p-2 mt-2" onClick={handleClick}>{buttonText}</button>
-          <button type="button" className="col-lg-5 btn button btn-md rounded-pill p-2 mt-2">Go to product</button>
+        <div className='card-button-div container-fluid'>
+          <div className="row justify-content-lg-start justify-content-evenly gap-lg-3 pt-2 px-lg-2 px-md-3 px-4 pb-0 mb-3 ms-lg-0 mt-lg-3">
+            <button type="button" className="col-lg-5 btn button btn-md rounded-pill p-2 mt-2" onClick={handleClick}>{buttonText}</button>
+            <button type="button" className="col-lg-5 btn button btn-md rounded-pill p-2 mt-2">Go to product</button>
+          </div>
         </div>
       </div>
     </div>

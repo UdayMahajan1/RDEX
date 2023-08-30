@@ -5,7 +5,7 @@ import FlexProducts from './Product Cards/FlexProducts'
 import InfoFlexProducts from './Product Cards/infoFlexProducts'
 import LeftGradient from './Circular Gradients/LeftGradient';
 import RightGradient from './Circular Gradients/RightGradient';
-import vector from '../img/Vector 36.svg';
+import CarouselComp from './CarouselComp'
 import Vector from './Vector'
 
 export default function Products() {
@@ -29,37 +29,18 @@ export default function Products() {
           </div>
         </div>
       </div>
-      <div className="container-fluid flex-products-padding row justify-content-lg-center mt-lg-5">
-        <div className="col-lg">
-          {/* <div id="carouselExampleFade" className="carousel slide carousel-fade">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className='d-block w-50' style={{ height: '400px' }}></div>
-            </div>
-            <div className="carousel-item">
-              <div className='d-block w-50' style={{ height: '400px' }}></div>
-            </div>
-            <div className="carousel-item">
-              <div className='d-block w-50' style={{ height: '400px' }}></div>
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div> */}
-          {
-            InfoFlexProducts.map((card, index) => {
-              return (
-                <FlexProducts key={index} img={card.img} title={card.title} desc={card.desc} />
-              )
-            })
-          }
-        </div>
+      <div className="container-fluid flex-products-padding mt-lg-5">
+        {/* <div className="w-lg-100"> */}
+          {/* <CarouselComp> */}
+            {
+              InfoFlexProducts.map((card, index) => {
+                return (
+                  <FlexProducts key={index} img={card.img} title={card.title} desc={card.desc} />
+                )
+              })
+            }
+          {/* </CarouselComp> */}
+        {/* </div> */}
       </div>
     </>
   )
