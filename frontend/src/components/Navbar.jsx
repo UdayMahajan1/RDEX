@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     // <nav className="navbar navbar-expand-lg bg-Dark py-3 px-md-5 px-3 sticky-lg-top">
-    <nav className="navbar navbar-expand-md bg-Dark py-sm-3 py-lg-1 py-md-2 nav-padding sticky-md-top">
+    <nav className="navbar navbar-expand-md bg-Dark py-sm-3 py-lg-1 py-md-2 nav-padding sticky-md-top ">
       <div className="container-fluid">
         {/* <a className="navbar-brand me-lg-5 px-lg-5 fs-3" href="#">RDEX</a> */}
         <a href='#'><img src={originalLogo} className="navbar-icon px-lg-3 px-md-0 px-sm-1 rounded-circle"

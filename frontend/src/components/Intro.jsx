@@ -45,7 +45,11 @@ export default function Intro() {
         </div>
         <div className="col-sm col-md-5 col-lg-6 d-none d-md-block">
           {/* <img className="img-fluid enlarge-icon logo-animation" src={logo} alt="logo" /> */}
-          <img className="img-fluid pulsing-element" src={logo} alt="logo" />
+          <div className="row justify-content-lg-center">
+            <div className='col-lg-auto'>
+              <img className="img-fluid pulsing-element" src={logo} alt="logo" />
+            </div>
+          </div>
         </div>
       </div>
     </div >
