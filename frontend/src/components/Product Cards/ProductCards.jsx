@@ -14,7 +14,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
       document.querySelector('.fade-in-cards').classList.replace('fade-in-cards', 'deactivate');
       setTimeout(() => {
         setActive(false);
-      }, 200)
+      }, 410)
     }
   }
 
