@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FlexProducts({ img, title, desc }) {
   return (
-    <div className="container-fluid flex-products-padding row mt-lg-5 mt-md-0 mt-sm-3 mt-3 pt-md-5 justify-content-md-between justify-content-xl-center gap-3 text-white position-relative mx-lg-auto">
+    <div className="container-fluid flex-products-padding row mt-lg-5 mt-md-0 mt-sm-3 mt-3 pt-md-5 pb-5 justify-content-md-between justify-content-xl-center gap-3 text-white position-relative mx-lg-auto">
       <div className="col-md-5 transparent-background left-card-animation d-flex justify-content-center">
         <img src={img} className="img-fluid" alt="product" />
       </div>

@@ -440,12 +440,13 @@
   }
 
   .about-us-right-body {
-    height: 65vh;
-    max-height: 80vh;
+    height: auto;
+    max-height: 100vh;
   }
 
   .height-about-us {
-    height: 80vh;
+    height: auto;
+    max-height: 100vh;
   }
 
   .navbar-link-font {
@@ -453,7 +454,7 @@
   }
 
   .img-enlarge { 
-    height: 70vh;
+    height: 60vh;
   }
 
   .navbar-icon {
@@ -514,12 +515,13 @@
   }
 
   .about-us-right-body {
-    height: auto;
-    max-height: 61vh;
+    height: 70vh;
+    max-height: 100vh;
   }
 
   .height-about-us {
-    height: 75vh;
+    height: 90vh;
+    max-height: 100vh;
   }
 
   .navbar-link-font {
@@ -895,12 +897,12 @@
   
   .about-us-right-body {
     height: auto;
-    max-height: 55vh;
+    max-height: 200vh;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 65vh; 
+    max-height: 200vh; 
   }
 
   .navbar-icon {
@@ -1135,12 +1137,12 @@
 
   .about-us-right-body {
     height: auto;
-    max-height: 95vh;
+    max-height: 280vh;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 100vh; 
+    max-height: 280vh; 
   }
 }
 
@@ -1288,11 +1290,11 @@
   .about-us-right-body {
     padding-bottom: 2vh;
     height: auto;
-    max-height: 127vh;
+    max-height: 300vh;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 139vh; 
+    max-height: 300vh; 
   }
 }
