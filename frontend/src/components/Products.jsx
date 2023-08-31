@@ -29,9 +29,9 @@ export default function Products() {
           </div>
         </div>
       </div>
-      <div className="container-fluid flex-products-padding mt-lg-5">
-        {/* <div className="w-lg-100"> */}
-          {/* <CarouselComp> */}
+      <div className="container-fluid mt-lg-5 position-relative overflow-visible">
+          <LeftGradient />
+          <CarouselComp>
             {
               InfoFlexProducts.map((card, index) => {
                 return (
@@ -39,8 +39,7 @@ export default function Products() {
                 )
               })
             }
-          {/* </CarouselComp> */}
-        {/* </div> */}
+          </CarouselComp>
       </div>
     </>
   )

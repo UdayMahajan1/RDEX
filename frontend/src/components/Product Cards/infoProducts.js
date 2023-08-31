@@ -6,7 +6,7 @@ const InfoProducts = [
     id: 1,
     img: img1,
     title: 'Product-1',
-    desc: 'Urna nec tincidunt praesent semper. Fermentum iaculis eu non diam. Amet cursus sit amet dictum sit amet justo donec.',
+    desc: 'A blockchain ecosystem offering unbeatable speed and the lowest fees, with top-level security and scalability.',
     addDesc: 'Urna nec tincidunt praesent semper. Fermentum iaculis eu non diam. Amet cursus sit amet dictum sit amet justo donec.Urna nec tincidunt praesent semper. Fermentum iaculis eu non diam. Amet cursus sit amet dictum sit amet justo donec.Urna nec tincidunt praesent semper. Fermentum iaculis eu non diam. Amet cursus sit amet dictum sit amet justo donec.'
   },
   {

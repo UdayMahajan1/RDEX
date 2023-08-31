@@ -8,11 +8,13 @@ export default function Tokenomics() {
     <div className="position-relative">
       <RightGradient />
       <Vector sectionName='tokenomics' />
-      <div id="tokenomics" className="container text-white top-margin-tokenomics mb-5">
-        <h1 className="display-3 fw-semibold heading-font fade-in title-padding">Tokenomics</h1>
+      <div id="tokenomics" className="container-fluid ms-lg-5 ms-md-4 text-white top-margin-tokenomics mb-5">
+        <h1 className="display-3 fw-semibold heading-font fade-in title-padding section-heading-font">Tokenomics</h1>
         {/* <div className="container-fluid row justify-content-center mt-5 fade-in">
       </div> */}
-        <div id="chart" className="mx-md-auto mt-lg-5 mt-3 tokenomics-width"></div>
+        <div className="mx-auto tokenomics-width">
+          <div id="chart" className="mx-md-auto mt-lg-5 mt-3"></div>
+        </div>
       </div>
     </div>
   )

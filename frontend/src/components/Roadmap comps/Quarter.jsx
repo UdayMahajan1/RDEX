@@ -8,7 +8,7 @@ export default function Quarter({ quarter }) {
         <img src={arrow} className="position-absolute start-0 top-0 img-adjust" alt=".." />
       </div>
       <div className="col-lg-5 col-11 ps-lg-0 ps-3">
-        <h1 className="display-6 fw-semibold heading-font">{quarter.quarter}</h1>
+        <h1 className="card-Title fw-semibold heading-font">{quarter.quarter}</h1>
         <div className="mt-4">
           {
             quarter.tasks.map((task, index) => {

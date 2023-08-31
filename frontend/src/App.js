@@ -19,15 +19,15 @@ function App() {
 
   useEffect(() => {
 
-    new CountUp('stat1', 25, {
-      enableScrollSpy: true,
-      suffix: 'M+'
-    });
+    // new CountUp('stat1', 25, {
+    //   enableScrollSpy: true,
+    //   suffix: 'M+'
+    // });
 
-    new CountUp('stat2', 600, {
-      enableScrollSpy: true,
-      suffix: 'K+'
-    });
+    // new CountUp('stat2', 600, {
+    //   enableScrollSpy: true,
+    //   suffix: 'K+'
+    // });
 
     const options = {
       chart: {
@@ -79,8 +79,8 @@ function App() {
       </ParticlesBg>
       <Products />
       <AboutUs />
-      <Roadmap />
-      <Tokenomics />
+      {/* <Roadmap /> */}
+      {/* <Tokenomics /> */}
       <Footer />
       </div>
     </>
