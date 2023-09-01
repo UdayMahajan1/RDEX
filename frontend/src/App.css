@@ -1311,6 +1311,7 @@ p {
   }
 
   .about-us-right-body {
+    padding-bottom: 3vh;
     height: auto;
     max-height: 300vh;
   }
@@ -1322,6 +1323,6 @@ p {
 
   .about-us-desc-height {
     height: auto;
-    max-height: 100vh;
+    max-height: 120vh;
   }
 }
