@@ -133,7 +133,7 @@ export default function Footer() {
         </div>
         <div className="col-md-5 col-sm-4 col-12">
           <p className='lg-text fw-semibold mb-3 ps-xl-3 text-center text-md-end'>Our Community</p>
-          <div className="row justify-content-md-end justify-content-center gap-md-3 gap-4 ms-lg-0 ps-2 my-3">
+          <div className="row justify-content-md-end justify-content-center gap-md-3 gap-4 ms-lg-0 ps-md-2 my-3">
             <div className="col-auto scaleUp rounded-circle footer-socials">
               <a href="#"><img src={telegram} className="footer-img" alt="" /></a>
             </div>
