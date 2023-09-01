@@ -45,7 +45,7 @@ export default function AboutUs() {
           </div>
           <div className={rightBody + " col text-light mt-lg-3 mt-md-0 mt-2 pe-lg-5 ps-xl-3 text-lg-start align-self-center position-relative about-us-right-body slide-left overflow-hidden"}>
             <h1 className={"display-3 font-enlarge fw-semibold heading-font text-lg-start text-center"}>About us</h1>
-            <div className='mb-5 pb-lg-4 pb-xl-5 pb-md-3 pb-sm-5 about-us-desc-height overflow-hidden'>
+            <div className='mb-5 pb-lg-4 pb-xl-5 pb-md-3 pb-sm-5 about-us-desc-height overflow-scroll'>
               <p className="mt-4 card-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

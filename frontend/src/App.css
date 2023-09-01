@@ -1133,7 +1133,7 @@ p {
 
   .custom-input {
     border: 3px solid #c304d7;
-    width: 37vw;
+    width: 100%;
     height: 6.4vh;
     background-color: rgba(25, 26, 24, 1);
     color: white;

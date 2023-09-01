@@ -76,7 +76,7 @@ export default function Footer() {
           </div> 
         */}
         <div className="col-md-5 mt-3">
-          <div className="row justify-content-md-end justify-content-sm-evenly justify-content-center gap-md-5 gap-sm-2 gap-5 text-md-end">
+          <div className="row justify-content-md-end justify-content-sm-evenly justify-content-center gap-md-5 gap-sm-2 gap-5 text-md-start">
             <div className="col-md-auto col-6">
               <div className="row mb-md-3">
                 <div className="col-auto mt-lg-0 mt-2">
@@ -93,8 +93,8 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2 text-end">
-              <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1 text-md-start">PRODUCTS</p>
+            <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2 text-start">
+              <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1 ">PRODUCTS</p>
               <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 1</p>
               <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 1</p>
               <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 2</p>
@@ -106,8 +106,9 @@ export default function Footer() {
       </div>
       <div className="container-fluid row justify-content-md-between justify-content-evenly my-lg-5 my-4">
         <div className="col-md-5 col-sm-7 col-12">
-          <p className='lg-text fw-semibold text-md-start text-center'>Stay up to date</p>
+          {/* <p className='lg-text fw-semibold text-md-start text-center'>Stay up to date</p> */}
           <div className="my-4 row align-items-center justify-content-md-start justify-content-center">
+            <p className='lg-text fw-semibold text-md-start text-center'>Stay up to date</p>
             <div className="col-md-8 col-10">
               <div className="input-group input-group-lg mb-3">
                 <input type="email" className="custom-input rounded-pill shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" ref={emailRef}
@@ -124,7 +125,7 @@ export default function Footer() {
               <button type="button" className="btn button-footer btn-lg border-0 rounded-pill text-center" onClick={sendMsg}>Subscribe</button>
             </div>
             <div className="d-flex d-md-none justify-content-md-start justify-content-center">
-              <div id='subscribe' className="col-8 pe-2 pt-md-0 pt-3 d-flex justify-content-sm-end justify-content-center">
+              <div id='subscribe' className="col-10 pe-2 pt-md-0 pt-3 d-flex justify-content-sm-end justify-content-center">
                 <button type="button" className="btn button-footer btn-lg border-0 rounded-pill text-center" onClick={sendMsg}>Subscribe</button>
               </div>
             </div>
