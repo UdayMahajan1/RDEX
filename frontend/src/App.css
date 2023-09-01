@@ -444,7 +444,8 @@ p {
   }
 
   .about-us-right-body {
-    height: 70vh;
+    /* height: 70vh; */
+    height: auto;
     max-height: 100vh;
   }
 
@@ -524,12 +525,14 @@ p {
   }
 
   .about-us-right-body {
-    height: 65vh;
+    /* height: 73vh; */
+    height: auto;
     max-height: 100vh;
   }
 
   .height-about-us {
-    height: 85vh;
+    /* height: 92vh; */
+    height: auto;
     max-height: 100vh;
   }
 
@@ -604,10 +607,6 @@ p {
     max-width: 11vw;
   }
 
-  /* .navbar-link-font {
-    font-size: 1.1vw;
-  } */
-
   .intro-heading-font {
     font-size: 4.5vw;
     white-space: nowrap;
@@ -642,10 +641,6 @@ p {
     right: 0;
   }
 
-  /* .card-img {
-    height: 18vw;
-  } */
-
   .padding-card-top {
     padding: 0vw 0.8vw;
   }
@@ -678,10 +673,6 @@ p {
     right: -25%;
   }
 
-  /* .tokenomics-width {
-    width: 60%;
-  } */
-
   .nav-padding {
     padding: 0% 6%;
   }
@@ -693,19 +684,6 @@ p {
   .intro-padding {
     padding-left: 7%;
   }
-
-  /* .about-us-margin {
-    margin: 8% 9% 0%;
-  } */
-
-  /* .about-us-right-body {
-    height: auto;
-    max-height: 55vh;
-  }
-
-  .height-about-us {
-    height: 74vh;
-  } */
 
   .topMarginForRow {
     margin-top: 5rem;
@@ -723,17 +701,9 @@ p {
     transition: 1s all ease-in;
   }
 
-  /* .navbar-icon {
-    max-width: 100px;
-  } */
-
   #products {
     margin-top: 6rem;
   }
-
-  /* #roadmap {
-    margin-top: 6rem;
-  } */
 
   #footer {
     background-color: rgba(25, 26, 24, 1);
@@ -776,9 +746,6 @@ p {
     padding-left: 1vw;
   }
 
-  /* .footer-socials {
-    padding: 0.55vw;
-  } */
 }
 
 @media only screen and (max-width: 992px) {
