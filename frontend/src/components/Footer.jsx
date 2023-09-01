@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="col-md-5 mt-3">
-          <div className="row justify-content-md-end justify-content-sm-evenly justify-content-center gap-md-5 gap-sm-2 gap-5 text-md-start">
+          <div className="row justify-content-md-end justify-content-sm-evenly justify-content-center gap-lg-5 gap-md-4 gap-sm-2 gap-5 text-md-start">
             <div className="col-md-auto col-6">
               <div className="row mb-md-3">
                 <div className="col-auto mt-lg-0 mt-2">
