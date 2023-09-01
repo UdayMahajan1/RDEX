@@ -55,8 +55,6 @@ export default function AboutUs() {
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
               <p className={"card-desc " + addPara}>
                 Et netus et malesuada fames ac turpis egestas maecenas. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Maecenas sed enim ut sem viverra aliquet. Nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat. Elit eget gravida cum sociis. Ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat. Elit eget gravida cum sociis
