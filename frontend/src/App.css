@@ -444,13 +444,17 @@ p {
   }
 
   .about-us-right-body {
-    height: 66vh;
+    height: 70vh;
     max-height: 100vh;
   }
 
   .height-about-us {
     height: auto;
     max-height: 100vh;
+  }
+
+  .about-us-desc-height {
+    height: 45vh;
   }
 
   .navbar-link-font {
@@ -519,13 +523,17 @@ p {
   }
 
   .about-us-right-body {
-    height: 75vh;
+    height: 65vh;
     max-height: 100vh;
   }
 
   .height-about-us {
-    height: 95vh;
+    height: 85vh;
     max-height: 100vh;
+  }
+
+  .about-us-desc-height {
+    height: 40vh;
   }
 
   .navbar-link-font {
@@ -909,6 +917,10 @@ p {
     max-height: 200vh; 
   }
 
+  .about-us-desc-height {
+    height: auto;
+  }
+
   .navbar-icon {
     max-width: 50px;
   }
@@ -1121,7 +1133,7 @@ p {
 
   .custom-input {
     border: 3px solid #c304d7;
-    width: 35vw;
+    width: 37vw;
     height: 6.4vh;
     background-color: rgba(25, 26, 24, 1);
     color: white;
@@ -1147,6 +1159,10 @@ p {
   .height-about-us {
     height: auto;
     max-height: 280vh; 
+  }
+
+  .about-us-desc-height {
+    height: auto;
   }
 }
 
@@ -1269,7 +1285,7 @@ p {
 
   .custom-input {
     border: 3px solid #c304d7;
-    width: 60vw;
+    width: 80vw;
     height: 6.4vh;
     background-color: rgba(25, 26, 24, 1);
     color: white;

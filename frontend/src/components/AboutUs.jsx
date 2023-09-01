@@ -18,9 +18,13 @@ export default function AboutUs() {
       document.querySelector('.d-lg-block').classList.add('invisible');
       document.querySelector('.slide-left').classList.add('activate');
       document.querySelector('.slide-down').classList.add('activate');
+      document.querySelector('.about-us-right-body').classList.add('activate');
+      document.querySelector('.about-us-desc-height').classList.add('activate');
       setTimeout(() => {
         setReadMore(true);
         document.querySelector('.slide-left').classList.remove('activate');
+        document.querySelector('.about-us-right-body').classList.remove('activate');
+        document.querySelector('.about-us-desc-height').classList.remove('activate');
       }, 280);
     } else {
       document.querySelector('.slide-left').classList.add('reActivate');
@@ -43,14 +47,19 @@ export default function AboutUs() {
               <img className="img-fluid pulsing-element img-enlarge" src={aboutUsImg} alt='gif' />
             </div>
           </div>
-          <div className={rightBody + " col text-light mt-lg-3 mt-md-0 mt-2 pe-lg-5 ps-xl-3 text-lg-start align-self-center position-relative about-us-right-body slide-left"}>
+          <div className={rightBody + " col text-light mt-lg-3 mt-md-0 mt-2 pe-lg-5 ps-xl-3 text-lg-start align-self-center position-relative about-us-right-body slide-left overflow-hidden"}>
             <h1 className={"display-3 font-enlarge fw-semibold heading-font text-lg-start text-center"}>About us</h1>
-            <div className='mb-5 pb-lg-4 pb-xl-5 pb-md-3 pb-sm-5'>
-              <p className="mt-4 card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p className="mt-4 card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p className={"card-desc " + addPara}>Et netus et malesuada fames ac turpis egestas maecenas. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Maecenas sed enim ut sem viverra aliquet. Nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat. Elit eget gravida cum sociis. Ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat. Elit eget gravida cum sociis
+            <div className='mb-5 pb-lg-4 pb-xl-5 pb-md-3 pb-sm-5 about-us-desc-height overflow-scroll'>
+              <p className="mt-4 card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p className="mt-4 card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p className={"card-desc " + addPara}>
+                Et netus et malesuada fames ac turpis egestas maecenas. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Maecenas sed enim ut sem viverra aliquet. Nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat. Elit eget gravida cum sociis. Ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat. Elit eget gravida cum sociis
               </p>
               {/* <div className="row justify-content-lg-start justify-content-center mt-5 gap-lg-5 text-lg-start text-center">
                   <div className="col-5">
