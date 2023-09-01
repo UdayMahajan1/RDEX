@@ -40,7 +40,7 @@ export default function Footer() {
   return (
     <footer id="footer" className="container-fluid text-white pt-lg-5 pt-md-2 top-margin-and-padding-reach-us fade-in position-relative">
       <LeftGradient />
-      <div className="container-fluid row justify-content-between mb-lg-5">
+      <div className="container-fluid row justify-content-between mb-lg-5 mx-md-0 mx-auto">
         <div className="col-md-5">
           <div className="row justify-content-start gap-3">
             <div className='col-auto'>
@@ -51,30 +51,6 @@ export default function Footer() {
             <p className='footer-text space lh-base d-none d-md-block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
         </div>
-        {/* 
-          <div className="col-md-5 mt-3">
-            <div className="row justify-content-md-between gap-md-0 gap-sm-2 gap-5">
-              <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
-                <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">MENU</p>
-                <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
-                <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
-              </div>
-              <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
-                <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">PRODUCTS</p>
-                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 1</p>
-                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 1</p>
-                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 2</p>
-                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 2</p>
-                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 3</p>
-              </div>
-              <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
-                <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">COMPANY</p>
-                <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
-                <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
-              </div>
-            </div>
-          </div> 
-        */}
         <div className="col-md-5 mt-3">
           <div className="row justify-content-md-end justify-content-sm-evenly justify-content-center gap-md-5 gap-sm-2 gap-5 text-md-start">
             <div className="col-md-auto col-6">
@@ -104,7 +80,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container-fluid row justify-content-md-between justify-content-evenly my-lg-5 my-4">
+      <div className="container-fluid row justify-content-md-between justify-content-evenly my-lg-5 my-4 mx-md-0 mx-auto">
         <div className="col-md-5 col-sm-7 col-12">
           {/* <p className='lg-text fw-semibold text-md-start text-center'>Stay up to date</p> */}
           <div className="my-4 row align-items-center justify-content-md-start justify-content-center">

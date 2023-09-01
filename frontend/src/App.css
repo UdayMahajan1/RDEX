@@ -1167,6 +1167,10 @@ p {
     height: auto;
     max-height: 72vh;
   }
+
+  .sm-padding {
+    padding-left: 11vw;
+  }
 }
 
 @media only screen and (max-width: 576px) {
