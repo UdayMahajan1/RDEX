@@ -46,20 +46,52 @@ export default function Footer() {
             <div className='col-auto'>
               <img src={logo} className="img-fluid footer-logo" alt=".." />
             </div>
-            {/* <div className='col-6'>
-              <h1 className="display-5 mt-2 fw-semibold">RDEX</h1>
-            </div> */}
           </div>
           <div className='mt-4 pt-2'>
             <p className='footer-text space lh-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
         </div>
+        {/* 
+          <div className="col-md-5 mt-3">
+            <div className="row justify-content-md-between gap-md-0 gap-sm-2 gap-5">
+              <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
+                <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">MENU</p>
+                <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
+                <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
+              </div>
+              <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
+                <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">PRODUCTS</p>
+                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 1</p>
+                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 1</p>
+                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 2</p>
+                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 2</p>
+                <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 3</p>
+              </div>
+              <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
+                <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">COMPANY</p>
+                <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
+                <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
+              </div>
+            </div>
+          </div> 
+        */}
         <div className="col-md-5 mt-3">
-          <div className="row justify-content-md-between gap-md-0 gap-sm-2 gap-5">
-            <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
-              <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">MENU</p>
-              <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
-              <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
+          <div className="row justify-content-evenly gap-md-5 gap-sm-2 gap-5">
+            <div className="col-md-auto col-6">
+              <div className="row mb-md-3">
+                <div className="col-auto mt-lg-0 mt-2">
+                  <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">MENU</p>
+                  <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
+                  <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
+                </div>
+              </div>
+              <div className="row mb-md-3">
+                <div className="col-auto mt-lg-0 mt-2">
+                  <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">COMPANY</p>
+                  <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
+                  <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
+                </div>
+              </div>
             </div>
             <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
               <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">PRODUCTS</p>
@@ -68,11 +100,6 @@ export default function Footer() {
               <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 2</p>
               <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 2</p>
               <p className="footer-link mb-lg-4 mb-md-3">PRODUCT 3</p>
-            </div>
-            <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2">
-              <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">COMPANY</p>
-              <p className="footer-link mb-lg-4 mb-md-3">ROADMAP</p>
-              <p className="footer-link mb-lg-4 mb-md-3">TOKENOMICS</p>
             </div>
           </div>
         </div>
@@ -93,14 +120,19 @@ export default function Footer() {
                   placeholder="Your Name" />
               </div>
             </div>
-            <div id='subscribe' className="col-md-4 col-sm ps-lg-2 ps-sm-3 ps-1 pt-md-0 pt-sm-3 pt-1">
+            <div id='subscribe' className="col-md-4 col-8 ps-lg-2 ps-sm-3 ps-1 pt-md-0 pt-3 d-none d-md-inline">
               <button type="button" className="btn button-footer btn-lg border-0 rounded-pill text-center" onClick={sendMsg}>Subscribe</button>
+            </div>
+            <div className="d-flex d-md-none justify-content-start">
+              <div id='subscribe' className="col-8 pe-2 pt-md-0 pt-3 d-flex justify-content-end">
+                <button type="button" className="btn button-footer btn-lg border-0 rounded-pill text-center" onClick={sendMsg}>Subscribe</button>
+              </div>
             </div>
           </div>
         </div>
         <div className="col-md-5 col-sm-4 col-12">
           <p className='lg-text fw-semibold mb-3 ps-xl-3'>Our Community</p>
-          <div className="row justify-content-sm-start justify-content-center gap-lg-4 gap-md-3 gap-4 ms-lg-0 ps-sm-2 my-3">
+          <div className="row justify-content-start gap-md-3 gap-4 ms-lg-0 ps-2 my-3">
             <div className="col-auto scaleUp rounded-circle footer-socials">
               <a href="#"><img src={telegram} className="footer-img" alt="" /></a>
             </div>
