@@ -72,7 +72,7 @@ export default function AboutUs() {
               {/* <div className="row mt-lg-3 mt-sm-5 mt-3 mb-3 justify-content-lg-start justify-content-center"> */}
             </div>
             <div className="d-flex justify-content-lg-start justify-content-center position-absolute bottom-0 end-0 start-0 ps-lg-2">
-              <button className={button + ' col-sm-5 col-10 btn button btn-lg rounded-pill px-4 py-2 slide-left slide-down'} onClick={readMoreHandler}>{buttonText}</button>
+              <button className={button + ' col-lg-3 col-sm-5 col-10 btn button btn-lg rounded-pill px-4 py-2 slide-left slide-down'} onClick={readMoreHandler}>{buttonText}</button>
             </div>
           </div>
         </div>

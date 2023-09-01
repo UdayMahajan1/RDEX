@@ -911,16 +911,17 @@ p {
   
   .about-us-right-body {
     height: auto;
-    max-height: 200vh;
+    max-height: 200vw;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 200vh; 
+    max-height: 200vw; 
   }
 
   .about-us-desc-height {
     height: auto;
+    max-height: 200vw;
   }
 
   .navbar-icon {
@@ -972,7 +973,7 @@ p {
   .custom-input {
     border: 3px solid #c304d7;
     width: 20vw;
-    height: 6.4vh;
+    height: 5vw;
     background-color: rgba(25, 26, 24, 1);
     color: white;
     padding-left: 1vw;
@@ -980,7 +981,7 @@ p {
 
   .button-footer {
     font-size: 1.5vw;
-    padding: 1.3vh 2.5vw;
+    padding: 1.3vw 2.5vw;
     max-width: 11vw;
   }
 
@@ -1155,17 +1156,17 @@ p {
 
   .about-us-right-body {
     height: auto;
-    max-height: 300vh;
+    max-height: 300vw;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 300vh; 
+    max-height: 300vw; 
   }
 
   .about-us-desc-height {
     height: auto;
-    max-height: 72vh;
+    max-height: 72vw;
   }
 }
 
