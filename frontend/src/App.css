@@ -454,7 +454,8 @@ p {
   }
 
   .about-us-desc-height {
-    height: 45vh;
+    height: auto;
+    max-height: 46vh;
   }
 
   .navbar-link-font {
@@ -533,7 +534,8 @@ p {
   }
 
   .about-us-desc-height {
-    height: 40vh;
+    height: auto;
+    max-height: 55vh; 
   }
 
   .navbar-link-font {
@@ -1153,16 +1155,17 @@ p {
 
   .about-us-right-body {
     height: auto;
-    max-height: 280vh;
+    max-height: 300vh;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 280vh; 
+    max-height: 300vh; 
   }
 
   .about-us-desc-height {
     height: auto;
+    max-height: 72vh;
   }
 }
 
@@ -1308,7 +1311,6 @@ p {
   }
 
   .about-us-right-body {
-    padding-bottom: 2vh;
     height: auto;
     max-height: 300vh;
   }
@@ -1316,5 +1318,10 @@ p {
   .height-about-us {
     height: auto;
     max-height: 300vh; 
+  }
+
+  .about-us-desc-height {
+    height: auto;
+    max-height: 100vh;
   }
 }
