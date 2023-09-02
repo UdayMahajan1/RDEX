@@ -61,13 +61,13 @@ export default function Footer() {
                   <p className="footer-link footer-text mb-lg-4 mb-md-3">TOKENOMICS</p>
                 </div>
               </div>
-              <div className="row mb-md-3">
+              {/* <div className="row mb-md-3">
                 <div className="col-auto mt-lg-0 mt-2">
                   <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">COMPANY</p>
                   <p className="footer-link footer-text mb-lg-4 mb-md-3">ROADMAP</p>
                   <p className="footer-link footer-text mb-lg-4 mb-md-3">TOKENOMICS</p>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2 text-start">
               <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1 ">PRODUCTS</p>
@@ -83,7 +83,7 @@ export default function Footer() {
       <div className="container-fluid row justify-content-md-between justify-content-evenly my-lg-5 my-4 mx-md-0 mx-auto">
         <div className="col-md-5 col-sm-7 col-12">
           {/* <p className='lg-text fw-semibold text-md-start text-center'>Stay up to date</p> */}
-          <div className="my-4 row align-items-center justify-content-md-start justify-content-center">
+          <div className="mb-4 row align-items-center justify-content-md-start justify-content-center">
             <p className='lg-text fw-semibold text-md-start text-center'>Stay up to date</p>
             <div className="col-md-8 col-10">
               <div className="input-group input-group-lg mb-3">

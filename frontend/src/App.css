@@ -446,17 +446,17 @@ p {
   .about-us-right-body {
     /* height: 70vh; */
     height: auto;
-    max-height: 100vh;
+    max-height: 200vh;
   }
 
   .height-about-us {
     height: auto;
-    max-height: 100vh;
+    max-height: 200vh;
   }
 
   .about-us-desc-height {
     height: auto;
-    max-height: 46vh;
+    max-height: 150vh;
   }
 
   .navbar-link-font {
@@ -527,18 +527,20 @@ p {
   .about-us-right-body {
     /* height: 73vh; */
     height: auto;
-    max-height: 100vh;
+    /* height: ; */
+    max-height: 200vh;
   }
 
   .height-about-us {
     /* height: 92vh; */
     height: auto;
-    max-height: 100vh;
+    /* height: ; */
+    max-height: 200vh;
   }
 
   .about-us-desc-height {
     height: auto;
-    max-height: 55vh; 
+    max-height: 150vh; 
   }
 
   .navbar-link-font {
