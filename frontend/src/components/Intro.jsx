@@ -13,22 +13,16 @@ export default function Intro() {
         <div className="col-sm-11 col-md-5 my-auto ms-md-4 text-light">
           <h1 className="intro-heading-font fw-bold heading-font">Rise of </h1>
           <h1 className="intro-heading-font fw-bold heading-font" style={{ color: '#C304D7' }}>Decentralization</h1>
-          <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <p className="my-4 my-md-2 intro-desc-font fw-normal me-lg-5 ms-md-1 text-white">A blockchain ecosystem offering unbeatable speed and the lowest fees, with top-level
-                  security
-                  and scalability.</p>
+                <p className="my-4 my-md-2 intro-desc-font fw-normal me-lg-5 ms-md-1 text-white">Revolutionize Your Future with Blockchain: Embrace the Future of Finance.</p>
               </div>
               <div className="carousel-item">
-                <p className="my-4 my-md-2 intro-desc-font fw-normal me-lg-5 ms-md-1 text-white">A blockchain ecosystem offering unbeatable speed and the lowest fees, with top-level
-                  security
-                  and scalability.</p>
+                <p className="my-4 my-md-2 intro-desc-font fw-normal me-lg-5 ms-md-1 text-white">Innovate with Confidence: Harnessing Blockchain for a Better Tomorrow.</p>
               </div>
               <div className="carousel-item">
-                <p className="my-4 my-md-2 intro-desc-font fw-normal me-lg-5 ms-md-1 text-white">A blockchain ecosystem offering unbeatable speed and the lowest fees, with top-level
-                  security
-                  and scalability.</p>
+                <p className="my-4 my-md-2 intro-desc-font fw-normal me-lg-5 ms-md-1 text-white">Blockchain Simplified: Empowering You in a Decentralised World.</p>
               </div>
             </div>
           </div>

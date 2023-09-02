@@ -42,7 +42,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
                 <h1 className="card-Title fw-semibold heading-font text-md-start mb-0">{title}</h1>
               </div>
             </div>
-            <div className='card-body card-body-height-active'>
+            <div className='card-body card-body-height-active overflow-scroll'>
               <p className="card-desc mt-1 pt-lg-0 pt-md-1"> {addDesc} </p>
             </div>
           </div>
