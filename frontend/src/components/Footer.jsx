@@ -88,13 +88,13 @@ export default function Footer() {
             <div className="col-md-8 col-10">
               <div className="input-group input-group-lg mb-3">
                 <input type="email" className="custom-input rounded-pill shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" ref={emailRef}
-                  placeholder="Your Email" />
+                  placeholder="Email" />
               </div>
             </div>
             <div className='col-md-8 col-10'>
               <div className="input-group input-group-lg">
                 <input type="text" className="custom-input rounded-pill" id="name" ref={nameRef}
-                  placeholder="Your Name" />
+                  placeholder="Name" />
               </div>
             </div>
             <div id='subscribe' className="col-md-4 col-8 ps-lg-2 ps-sm-3 ps-1 pt-md-0 pt-3 d-none d-md-inline">
