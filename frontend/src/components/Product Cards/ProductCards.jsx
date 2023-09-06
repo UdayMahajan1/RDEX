@@ -11,7 +11,8 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
     if (!active) {
       setActive(true);
     } else {
-      document.querySelector('.fade-in-cards').classList.replace('fade-in-cards', 'deactivate');
+      // document.querySelector(`.${id}`).classList.replace('fade-in-cards', 'deactivate');
+      document.querySelector(`.card-${id}`).classList.replace('fade-in-cards', 'deactivate');
       setTimeout(() => {
         setActive(false);
       }, 410)
@@ -32,7 +33,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
             </div>
           </div>
           :
-          <div className='fade-in-cards'>
+          <div className={'fade-in-cards card-' + id}>
             <div className='row justify-content-lg-start ps-lg-3 ps-md-3 align-items-center p-md-0 p-sm-1'>
               <div className="col-3">
                 <img src={originalLogo} className='img-fluid padding-card-top me-1 ms-0' alt='...' />
