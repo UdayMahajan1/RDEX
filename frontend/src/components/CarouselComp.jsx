@@ -17,31 +17,32 @@ export default function CarouselComp({ children }) {
 
 
   return (
-      <Carousel 
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
-            <a type="button" 
-              onClick={onClickHandler} 
-              className='rounded-circle p-0'
-              style={{ ...arrowStyles, left: 15, backgroundColor: 'inherit' }}
-            >
-              <img src={leftArrow} alt='-' />
-            </a>
-          )
-        }
-        renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && (
-            <a type="button" 
-              onClick={onClickHandler} 
-              className='rounded-circle p-0'
-              style={{ ...arrowStyles, right: 15, backgroundColor: 'inherit' }}
-            >
-              <img src={rightArrow}  alt='+' />
-            </a>
-          )
-        }
-      >
-        {children}
-      </Carousel>
+    <Carousel
+      renderArrowPrev={(onClickHandler, hasPrev, label) =>
+        hasPrev && (
+          <a type="button"
+            onClick={onClickHandler}
+            className='rounded-circle p-0'
+            style={{ ...arrowStyles, left: 15, backgroundColor: 'inherit' }}
+          >
+            <img src={leftArrow} alt='-' />
+          </a>
+        )
+      }
+      renderArrowNext={(onClickHandler, hasNext, label) =>
+        hasNext && (
+          <a type="button"
+            onClick={onClickHandler}
+            className='rounded-circle p-0'
+            style={{ ...arrowStyles, right: 15, backgroundColor: 'inherit' }}
+          >
+            <img src={rightArrow} alt='+' />
+          </a>
+        )
+      }
+      className=''
+    >
+      {children}
+    </Carousel>
   )
 }

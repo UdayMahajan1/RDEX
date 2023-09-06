@@ -4,7 +4,6 @@ import vector from '../img/Vector 36.svg'
 export default function Vector({sectionName}) {
 
   const tokenomicsPadding = sectionName === 'tokenomics' ? 'ps-lg-5 ps-sm-4 ps-3' : '';
-  console.log(tokenomicsPadding)
 
   return (
     <div className="d-flex justify-content-center align-items-center position-relative mb-sm-3 mb-4 mb-xl-5">

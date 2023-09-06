@@ -35,7 +35,6 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
           <div className='fade-in-cards'>
             <div className='row justify-content-lg-start ps-lg-3 ps-md-3 align-items-center p-md-0 p-sm-1'>
               <div className="col-3">
-                {/* <img src={originalLogo} className='img-fluid px-lg-4 px-md-0 px-sm-2 px-3 mt-lg-1 mt-2' alt='...' /> */}
                 <img src={originalLogo} className='img-fluid padding-card-top me-1 ms-0' alt='...' />
               </div>
               <div className="col-8">

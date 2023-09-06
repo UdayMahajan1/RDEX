@@ -36,9 +36,10 @@ function App() {
       series: [4, 1.50, 1.25, 14.58, 2.08],
       labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
       legend: {
-        fontSize: '16px',
+        fontSize: '30px',
         labels: {
-          colors: 'rgb(155,157,158)'
+          // colors: 'rgb(155,157,158)'
+          colors: 'white'
         }
       }
     }
@@ -79,7 +80,7 @@ function App() {
       </ParticlesBg>
       <Products />
       <AboutUs />
-      {/* <Roadmap /> */}
+      <Roadmap />
       {/* <Tokenomics /> */}
       <Footer />
       </div>

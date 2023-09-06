@@ -2,15 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import NotFound from './components/NotFound';
 import reportWebVitals from './reportWebVitals';
 import { RefsProvider } from './contexts/RefsContext';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RefsProvider>
-    <App />
-    </RefsProvider>
+      <Router>
+        <Routes>
+          <Route path="*" element={
+            <NotFound />
+          } />
+          <Route path="/" element={
+            <RefsProvider>
+              <App />
+            </RefsProvider>
+          } />
+        </Routes>
+      </Router>
   </React.StrictMode>
 );
 

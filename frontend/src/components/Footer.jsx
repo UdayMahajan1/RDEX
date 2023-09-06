@@ -56,9 +56,9 @@ export default function Footer() {
             <div className="col-md-auto col-6">
               <div className="row mb-md-3">
                 <div className="col-auto mt-lg-0 mt-2">
-                  <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">MENU</p>
-                  <p className="footer-link footer-text mb-lg-4 mb-md-3">ROADMAP</p>
-                  <p className="footer-link footer-text mb-lg-4 mb-md-3">TOKENOMICS</p>
+                  <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1">COMPANY</p>
+                  <p className="footer-link footer-text mb-lg-4 mb-md-3">WHITEPAPER</p>
+                  <p className="footer-link footer-text mb-lg-4 mb-md-3">BLOG</p>
                 </div>
               </div>
               {/* <div className="row mb-md-3">
