@@ -31,17 +31,252 @@ function App() {
 
     const options = {
       chart: {
-        type: 'donut'
+        type: 'donut',
+        height: '500%',
+        width: '63%',
+        // offsetX: -100,
       },
-      series: [4, 1.50, 1.25, 14.58, 2.08],
+      plotOptions: {
+        pie: {
+          offsetX: 90,
+          customScale: 0.8,
+          dataLabels: {
+            minAngleToShowLabel: 360,
+          },
+          donut: {
+            size: '55%',
+            labels: {
+              show: false,
+            }
+          }
+        }
+      },
+      series: [5, 5, 5, 5, 5],
       labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
+      colors: ['#FF0EFF', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
+      fill : {
+        type: 'gradient',
+      },
       legend: {
-        fontSize: '30px',
+        fontSize: '25rem',
+        fontWeight: 200,
+        fontFamily: 'Open Sans',
+        position: 'left',
+        offsetX: 18,
+        offsetY: 150,
         labels: {
           // colors: 'rgb(155,157,158)'
           colors: 'white'
+        },
+        markers: {
+          width: 20,
+          height: 20,
+        },
+        itemMargin: {
+          // horizontal: 25,
+          vertical: 5
         }
-      }
+      },
+      responsive: [
+        {
+          breakpoint: 1200,
+          options: {
+            chart: {
+              type: 'donut',
+              height: '400%',
+              width: '120%',
+              // offsetX: -100,
+            },
+            plotOptions: {
+              pie: {
+                offsetX: -50,
+                customScale: 0.8,
+                dataLabels: {
+                  minAngleToShowLabel: 360,
+                },
+                donut: {
+                  size: '55%',
+                  labels: {
+                    show: false,
+                  }
+                }
+              }
+            },
+            series: [5, 5, 5, 5, 5],
+            labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
+            colors: ['#FF0EFF', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
+            legend: {
+              fontSize: '25rem',
+              fontWeight: 200,
+              fontFamily: 'Open Sans',
+              position: 'left',
+              offsetX: 0,
+              offsetY: 150,
+              labels: {
+                // colors: 'rgb(155,157,158)'
+                colors: 'white'
+              },
+              markers: {
+                width: 20,
+                height: 20,
+              },
+              itemMargin: {
+                horizontal: 0,
+                vertical: 5
+              }
+            }
+          }
+        },
+        {
+          breakpoint: 992,
+          options: {
+            chart: {
+              type: 'donut',
+              height: '300%',
+              width: '120%',
+              offsetX: -100,
+            },
+            plotOptions: {
+              pie: {
+                offsetX: 20,
+                customScale: 0.8,
+                dataLabels: {
+                  minAngleToShowLabel: 360,
+                },
+                donut: {
+                  size: '55%',
+                  labels: {
+                    show: false,
+                  }
+                }
+              }
+            },
+            series: [5, 5, 5, 5, 5],
+            labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
+            colors: ['#FF0EFF', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
+            legend: {
+              fontSize: '25rem',
+              fontWeight: 200,
+              fontFamily: 'Open Sans',
+              position: 'left',
+              offsetX: 60,
+              offsetY: 100,
+              labels: {
+                // colors: 'rgb(155,157,158)'
+                colors: 'white'
+              },
+              markers: {
+                width: 20,
+                height: 20,
+              },
+              itemMargin: {
+                // horizontal: 25,
+                vertical: 5
+              }
+            }
+          }
+        },
+        {
+          breakpoint: 767,
+          options: {
+            chart: {
+              type: 'donut',
+              height: '300%',
+              width: '120%',
+              offsetX: -80,
+            },
+            plotOptions: {
+              pie: {
+                offsetX: 33,
+                offsetY: 20,
+                customScale: 1,
+                dataLabels: {
+                  minAngleToShowLabel: 360,
+                },
+                donut: {
+                  size: '55%',
+                  labels: {
+                    show: false,
+                  }
+                }
+              }
+            },
+            series: [5, 5, 5, 5, 5],
+            labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
+            colors: ['#FF0EFF', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
+            legend: {
+              fontSize: '25rem',
+              fontWeight: 200,
+              fontFamily: 'Open Sans',
+              position: 'bottom',
+              offsetX: 60,
+              offsetY: 0,
+              labels: {
+                // colors: 'rgb(155,157,158)'
+                colors: 'white'
+              },
+              markers: {
+                width: 20,
+                height: 20,
+              },
+              itemMargin: {
+                horizontal: 25,
+                vertical: 15
+              }
+            }
+          }
+        },
+        {
+          breakpoint: 576,
+          options: {
+            chart: {
+              type: 'donut',
+              height: '460%',
+              width: '120%',
+              offsetX: -80,
+            },
+            plotOptions: {
+              pie: {
+                offsetX: 45,
+                offsetY: 20,
+                customScale: 0.85,
+                dataLabels: {
+                  minAngleToShowLabel: 360,
+                },
+                donut: {
+                  size: '55%',
+                  labels: {
+                    show: false,
+                  }
+                }
+              }
+            },
+            series: [5, 5, 5, 5, 5],
+            labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
+            colors: ['#FF0EFF', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
+            legend: {
+              fontSize: '25rem',
+              fontWeight: 200,
+              fontFamily: 'Open Sans',
+              position: 'bottom',
+              offsetX: 60,
+              offsetY: 0,
+              labels: {
+                // colors: 'rgb(155,157,158)'
+                colors: 'white'
+              },
+              markers: {
+                width: 20,
+                height: 20,
+              },
+              itemMargin: {
+                horizontal: 30,
+                vertical: 10
+              }
+            }
+          }
+        }
+      ]
     }
     const chartElement = document.getElementById('chart')
     const chart = new ApexCharts(chartElement, options);
@@ -75,14 +310,14 @@ function App() {
     <>
       <Navbar />
       <div className='custom-overflow'>
-      <ParticlesBg>
-        <Intro />
-      </ParticlesBg>
-      <Products />
-      <AboutUs />
-      <Roadmap />
-      {/* <Tokenomics /> */}
-      <Footer />
+        <ParticlesBg>
+          <Intro />
+        </ParticlesBg>
+        <Products />
+        <AboutUs />
+        <Roadmap />
+        <Tokenomics />
+        <Footer />
       </div>
     </>
   );
