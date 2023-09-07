@@ -446,15 +446,12 @@ p {
 .not-found {
   position: relative;
   overflow: hidden;
-  padding-bottom: 20vh;
-  height: auto;
+  padding-bottom: 3rem;
+  /* min-height: 100vh;
+  max-height: auto; */
+  min-height: 100vh;
+  max-height: 120vh;
 }
-
-/* .msg-n-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-} */
 
 .not-found-left-gradient {
   position: absolute;
@@ -471,34 +468,34 @@ p {
 .Style1 {
   color: #0AA9CC;
   font-family: 'Poppins';
-  font-size: 125px;
+  font-size: 115px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   transform: rotate(-14.085deg);
-  text-shadow: 12px 12px #C205D7;
+  text-shadow: 8px 8px #C205D7;
 }
 
 .Style2 {
   color: #0AA9CC;
   font-family: 'Poppins';
-  font-size: 125px;
+  font-size: 115px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   transform: rotate(-2.447deg);
-  text-shadow: 12px 12px #C205D7;
+  text-shadow: 8px 8px #C205D7;
 }
 
 .Style3 {
   color: #0AA9CC;
   font-family: 'Poppins';
-  font-size: 125px;
+  font-size: 115px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   transform: rotate(9.192deg);
-  text-shadow: 12px 12px #C205D7;
+  text-shadow: 8px 8px #C205D7;
 }
 
 .Style4 {
@@ -529,6 +526,71 @@ p {
   font-weight: 400;
   line-height: 54px; 
   letter-spacing: 0.33px;
+}
+
+@media only screen and (min-height: 600px) {
+  .Style1 {
+    color: #0AA9CC;
+    font-family: 'Poppins';
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(-14.085deg);
+    text-shadow: 9px 9px #C205D7;
+  }
+  
+  .Style2 {
+    color: #0AA9CC;
+    font-family: 'Poppins';
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(-2.447deg);
+    text-shadow: 9px 9px #C205D7;
+  }
+  
+  .Style3 {
+    color: #0AA9CC;
+    font-family: 'Poppins';
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(9.192deg);
+    text-shadow: 9px 9px #C205D7;
+  }
+  
+  .Style4 {
+    color: #C304D7;
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.95px;
+  }
+  
+  .Style5 {
+    color: #C304D7;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.95px;
+  }
+  
+  .Style6 {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px; 
+    letter-spacing: 0.33px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
