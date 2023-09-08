@@ -12,6 +12,7 @@ import $ from 'jquery';
 import { CountUp } from 'countup.js'
 import ApexCharts from 'apexcharts'
 import { Tooltip } from 'bootstrap';
+import Chatbot from './components/Chatbot';
 
 function App() {
 
@@ -318,6 +319,7 @@ function App() {
         <Roadmap />
         <Tokenomics />
         <Footer />
+        <Chatbot />
       </div>
     </>
   );

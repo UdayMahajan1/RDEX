@@ -6,6 +6,7 @@ import NotFound from './components/NotFound';
 import reportWebVitals from './reportWebVitals';
 import { RefsProvider } from './contexts/RefsContext';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Subscribed from './components/Subscribed';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,9 @@ root.render(
             <RefsProvider>
               <App />
             </RefsProvider>
+          } />
+          <Route path="/subscribed" element={
+            <Subscribed />
           } />
         </Routes>
       </Router>

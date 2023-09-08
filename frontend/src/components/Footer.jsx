@@ -7,11 +7,13 @@ import database from '../FirebaseDb'
 import LeftGradient from './Circular Gradients/LeftGradient'
 import ax from 'axios';
 import { doc, setDoc } from "firebase/firestore";
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
 
   const nameRef = useRef(null);
   const emailRef = useRef(null);
+  const navigate = useNavigate();
 
   async function sendMsg() {
 
@@ -24,6 +26,7 @@ export default function Footer() {
     try {
       await setDoc(doc(database, "subs", emailRef.current.value), data)
       console.log("Document written.");
+      navigate('/subscribed');
     } catch (e) {
       console.error("Error adding document: ", e);
     }
