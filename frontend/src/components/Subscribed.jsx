@@ -10,7 +10,7 @@ export default function Subscribed() {
         <LeftGradient />
       </div>
       <div className='row justify-content-center subscribed-margin-top'>
-        <div className="col-xxl-1 col-lg-2 col-sm-3 col-4">
+        <div className="col-lg-2 col-sm-3 col-4">
           <img src={subscribedImg} className='img-fluid' alt=".." />
         </div>
       </div>
