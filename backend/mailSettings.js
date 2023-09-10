@@ -22,7 +22,7 @@ const sendMail = (name, email) => {
     }
   });
 
-  ejs.renderFile(path.join(__dirname, 'views/email.ejs'), data, (err, data) => {
+  ejs.renderFile(path.join(__dirname, 'views/eemail.ejs'), data, (err, data) => {
     if (err) { console.log(err) }
     else {
       const mailOptions = {
