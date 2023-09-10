@@ -20,7 +20,7 @@ export default function Products() {
           {
             InfoProducts.map((card, index) => {
               return (
-                <ProductCards key={index} id={index} img={card.img} title={card.title} desc={card.desc} addDesc={card.addDesc} />
+                <ProductCards key={index} id={index} img={card.img} img2={card.img2} title={card.title} desc={card.desc} addDesc={card.addDesc} />
               )
             })
           }

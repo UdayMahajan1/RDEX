@@ -907,7 +907,7 @@ p {
   }
 
   .padding-card-top {
-    padding: 0vw 0.8vw;
+    padding: 0vw 1.4vw;
   }
 
   .left-gradient {
@@ -1017,6 +1017,10 @@ p {
 }
 
 @media only screen and (max-width: 992px) {
+
+  .padding-card-top {
+    padding: 0 0.6vw;
+  }
 
   .subscribed-margin-top {
     margin-top: 10vh;
@@ -1278,7 +1282,7 @@ p {
   }
 
   .padding-card-top {
-    padding: 0vw 2.2vw;
+    padding: 0vw 2.9vw;
   }
 
   .button {
@@ -1562,7 +1566,7 @@ p {
   }
 
   .padding-card-top {
-    padding: 0vw 3vw;
+    padding: 0vw 3.8vw;
   }
 
   .button {

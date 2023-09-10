@@ -75,11 +75,10 @@ export default function Footer() {
             </div>
             <div className="col-md-auto col-sm-3 col-auto mt-lg-0 mt-2 text-start">
               <p className="lg-text fw-semibold mb-lg-4 mb-md-3 mb-3 mb-1 ">PRODUCTS</p>
-              <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 1</p>
-              <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 1</p>
-              <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 2</p>
-              <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 2</p>
-              <p className="footer-link footer-text mb-lg-4 mb-md-3">PRODUCT 3</p>
+              <p className="footer-link footer-text mb-lg-4 mb-md-3">RD ACCUVOTE</p>
+              <p className="footer-link footer-text mb-lg-4 mb-md-3">SMART WALLET</p>
+              <p className="footer-link footer-text mb-lg-4 mb-md-3">RD MEDPRO</p>
+              <p className="footer-link footer-text mb-lg-4 mb-md-3">RD SUPPYSAGE</p>
             </div>
           </div>
         </div>

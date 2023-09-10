@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import originalLogo from '../../img/white dragon.png';
 
-export default function ProductCards({ id, img, title, desc, addDesc }) {
+export default function ProductCards({ id, img, img2, title, desc, addDesc }) {
 
   const fadeInAnimation = id % 2 === 0 ? 'left' : 'right';
   const [active, setActive] = useState(false);
@@ -36,7 +35,7 @@ export default function ProductCards({ id, img, title, desc, addDesc }) {
           <div className={'fade-in-cards card-' + id}>
             <div className='row justify-content-lg-start ps-lg-3 ps-md-3 align-items-center p-md-0 p-sm-1'>
               <div className="col-3">
-                <img src={originalLogo} className='img-fluid padding-card-top me-1 ms-0' alt='...' />
+                <img src={img2} className='img-fluid padding-card-top me-1 ms-0' alt='...' />
               </div>
               <div className="col-8">
                 <h1 className="card-Title fw-semibold heading-font text-md-start mb-0">{title}</h1>
