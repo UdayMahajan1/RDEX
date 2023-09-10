@@ -260,6 +260,7 @@ function App() {
               fontWeight: 200,
               fontFamily: 'Open Sans',
               position: 'bottom',
+              horizontalAlign: 'left',
               offsetX: 60,
               offsetY: 0,
               labels: {
