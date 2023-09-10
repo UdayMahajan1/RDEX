@@ -24,9 +24,9 @@ export default function NotFound() {
       </div>
       <div>
         <div className='text-center'>
-          <p className='Style4'>oops...!</p>
+          <p className='Style4'>OOPS...!</p>
           <p className='Style5'>Page not found</p>
-          <p className='Style6'>We are sorry but this page doesn't exist :(</p>
+          <p className='Style6'>Redirect to our homepage and find what you were looking for.</p>
         </div>
         <div className="d-flex justify-content-center">
           <a href="/" className="btn button-back-to-homepage btn-md rounded-pill mt-3 text-uppercase py-3 px-4">Return to home page</a>

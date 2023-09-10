@@ -1,4 +1,4 @@
-import img1 from '../../img/product3.png'
+import img1 from '../../img/Smart Wallet.png'
 
 const InfoFlexProducts = [
   {

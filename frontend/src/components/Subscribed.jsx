@@ -16,9 +16,9 @@ export default function Subscribed() {
       </div>
       <div className=''>
         <div className='text-center mt-lg-5 mt-md-3 mt-4 mx-3'>
-          <p className='SStyle4'>Subscribed successfully..!</p>
-          <p className='SStyle5'>Thank you for subscribing.</p>
-          <p className='Style6'>You've successfully subscribed to RDEX. Stay tuned for the updates.</p>
+          <p className='SStyle4'>Confirmed !</p>
+          <p className='SStyle5'>Thanks for subscribing.</p>
+          <p className='Style6'>Let the adventure begin.</p>
         </div>
         <div className="d-flex justify-content-center">
           <a href="/" className="btn button-back-to-homepage btn-md rounded-pill mt-3 text-uppercase py-3 px-4">Return to home page</a>

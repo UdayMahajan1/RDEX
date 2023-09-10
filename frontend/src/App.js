@@ -40,7 +40,7 @@ function App() {
       plotOptions: {
         pie: {
           offsetX: 90,
-          customScale: 0.8,
+          customScale: 0.7,
           dataLabels: {
             minAngleToShowLabel: 360,
           },
@@ -54,10 +54,10 @@ function App() {
       },
       series: [5, 5, 5, 5, 5],
       labels: ['Seed', 'Private', 'Public Sale', 'Liquidity CEX', 'Liquidity CEX unlocked'],
-      colors: ['#FF0EFF', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
-      fill : {
-        type: 'gradient',
-      },
+      colors: ['#C304D7', '#8802FF', '#4F45FF', '#017CFE', '#FF6500'],
+      // fill : {
+      //   type: 'gradient',
+      // },
       legend: {
         fontSize: '25rem',
         fontWeight: 200,

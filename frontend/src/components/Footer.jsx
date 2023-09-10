@@ -51,7 +51,8 @@ export default function Footer() {
             </div>
           </div>
           <div className='mt-4 pt-2'>
-            <p className='footer-text space lh-base d-none d-md-block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p className='footer-text space lh-base d-none d-md-block'>Revolutionize Your Future with Blockchain: Embrace the Future of Finance</p>
+            <p className='footer-text space lh-base d-none d-md-block'>Innovate with Confidence: Harnessing Blockchain for a Better Tomorrow.</p>
           </div>
         </div>
         <div className="col-md-5 mt-3">
