@@ -22,7 +22,7 @@ app.get('/unsubscribe/:email', async (req, res) => {
   const subRef = database.collection('subs').doc(email);
   try {
     const result = await subRef.update({isActive: false});
-    res.render('eemail');
+    res.render('unsubscribed');
   } catch (err) { console.log(err) }
 });
 
