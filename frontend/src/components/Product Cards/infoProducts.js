@@ -8,7 +8,7 @@ const InfoProducts = [
     id: 1,
     img: rdAccuVote,
     title: 'RD AccuVote',
-    desc: 'Rdex: Secure Digital Democracy - Vote with confidence while maintaining accuracy and transparency.',
+    desc: 'Secure Digital Democracy - Vote with confidence while maintaining accuracy and transparency.',
     addDesc: "Rdex reimagines voting for the modern era. We ensure the validity of your vote while maintaining transparency throughout the process by utilizing blockchain technology. A tamper-proof, accessible, and user-friendly voting experience should replace conventional voting equipment. Join us in influencing democracy's future one safe vote at a time."
   },
   {
@@ -22,14 +22,14 @@ const InfoProducts = [
     id: 3,
     img: rdMedPro,
     title: 'RD MedPro',
-    desc: 'Rdex: Elevate Healthcare Record Management-Electronic health records on blockchain that are safe, transparent, and easily accessible are managed.',
+    desc: 'Elevate Healthcare Record Management-Electronic health records on blockchain that are safe, transparent, and easily accessible are managed.',
     addDesc: 'Electronic health record management is redefined by Rdex. We employ the security and openness of blockchain to provide a user-friendly platform for patients and healthcare professionals. Your health information is secure with us, and we obey data protection rules thanks to our privacy precautions. Rdex lets you experience the future of medical records.'
   },
   {
     id: 4,
     img: rdSuppySage,
     title: 'RD SuppySage',
-    desc: 'Rdex: Sustainable Supply Chain Transformation - Using blockchain technology to manage a transparent and environmentally sustainable supply chain.',
+    desc: 'Sustainable Supply Chain Transformation - Using blockchain technology to manage a transparent and environmentally sustainable supply chain.',
     addDesc: "In building a sustainable supply chain, Rdex will work with you. You can track a product's environmental impact with blockchain's transparency and choose environmentally friendly products.Discover the supply chain of the future with Rdex."
   },
 ]
